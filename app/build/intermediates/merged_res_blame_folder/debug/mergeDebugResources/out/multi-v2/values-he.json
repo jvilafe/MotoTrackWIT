@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.mototrack.wit.app-mergeDebugResources-63:/values-he/values-he.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\jvila\\.gradle\\caches\\transforms-4\\f57a67a8244d1c76074351c210653596\\transformed\\android-sdk-11.5.2\\res\\values-he\\values-he.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,179,270,388,493,647,763",
+                        "endColumns": "123,90,117,104,153,115,138",
+                        "endOffsets": "174,265,383,488,642,758,897"
+                    }
+                }
+            ]
+        }
+    ]
+}

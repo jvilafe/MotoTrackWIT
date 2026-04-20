@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.mototrack.wit.app-debug-65:/xml_backup_rules.xml.flat",
+        "source": "com.mototrack.wit.app-main-67:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.mototrack.wit.app-debug-65:/drawable_ic_stat_record.xml.flat",
+        "source": "com.mototrack.wit.app-main-67:/drawable/ic_stat_record.xml"
+    },
+    {
+        "merged": "com.mototrack.wit.app-debug-65:/raw_osm_style.json.flat",
+        "source": "com.mototrack.wit.app-main-67:/raw/osm_style.json"
+    },
+    {
+        "merged": "com.mototrack.wit.app-debug-65:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.mototrack.wit.app-main-67:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.mototrack.wit.app-debug-65:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.mototrack.wit.app-main-67:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    }
+]

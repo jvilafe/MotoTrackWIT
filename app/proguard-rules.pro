@@ -1,0 +1,3 @@
+-keep class com.mototrack.wit.** { *; }
+-dontwarn org.bouncycastle.**
+-dontwarn org.conscrypt.**

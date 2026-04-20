@@ -1,0 +1,4 @@
+# Renombra a local.properties y rellena
+sdk.dir=/Users/tu_usuario/Library/Android/sdk
+
+# No se necesitan tokens de mapas: MapLibre + OpenStreetMap son gratis y sin registro.
