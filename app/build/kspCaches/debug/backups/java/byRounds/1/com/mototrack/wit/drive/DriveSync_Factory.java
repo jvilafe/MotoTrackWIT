@@ -23,22 +23,22 @@ import javax.inject.Provider;
     "cast"
 })
 public final class DriveSync_Factory implements Factory<DriveSync> {
-  private final Provider<Context> ctxProvider;
+  private final Provider<Context> contextProvider;
 
-  public DriveSync_Factory(Provider<Context> ctxProvider) {
-    this.ctxProvider = ctxProvider;
+  public DriveSync_Factory(Provider<Context> contextProvider) {
+    this.contextProvider = contextProvider;
   }
 
   @Override
   public DriveSync get() {
-    return newInstance(ctxProvider.get());
+    return newInstance(contextProvider.get());
   }
 
-  public static DriveSync_Factory create(Provider<Context> ctxProvider) {
-    return new DriveSync_Factory(ctxProvider);
+  public static DriveSync_Factory create(Provider<Context> contextProvider) {
+    return new DriveSync_Factory(contextProvider);
   }
 
-  public static DriveSync newInstance(Context ctx) {
-    return new DriveSync(ctx);
+  public static DriveSync newInstance(Context context) {
+    return new DriveSync(context);
   }
 }
