@@ -15,6 +15,7 @@ import com.mototrack.wit.ui.record.RecordScreen
 import com.mototrack.wit.ui.routes.RoutesScreen
 import com.mototrack.wit.ui.theme.MotoTrackTheme
 import dagger.hilt.android.AndroidEntryPoint
+import androidx.hilt.navigation.compose.hiltViewModel
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -25,7 +26,7 @@ class MainActivity : ComponentActivity() {
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
                     val nav = rememberNavController()
                     NavHost(nav, startDestination = "record") {
-                        composable("record") { RecordScreen(nav) }
+                        composable("record") { RecordScreen() }
                         composable("routes") { RoutesScreen(nav) }
                         composable("detail/{id}") { b ->
                             RouteDetailScreen(b.arguments?.getString("id")?.toLongOrNull() ?: 0L, nav)

@@ -1,108 +1,152 @@
 package com.mototrack.wit.ui.record
 
-import android.Manifest
-import android.content.Intent
-import android.os.Build
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.*
+import androidx.compose.material.icons.filled.Bluetooth
+import androidx.compose.material.icons.filled.BluetoothDisabled
+import androidx.compose.material.icons.filled.GpsFixed
+import androidx.compose.material.icons.filled.GpsOff
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
-import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.navigation.NavHostController
-import com.google.accompanist.permissions.ExperimentalPermissionsApi
-import com.google.accompanist.permissions.rememberMultiplePermissionsState
-import com.mototrack.wit.ble.BleState
-import com.mototrack.wit.service.RecordingForegroundService
+import com.mototrack.wit.recording.RecordingState
 
-@OptIn(ExperimentalMaterial3Api::class, ExperimentalPermissionsApi::class)
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun RecordScreen(nav: NavHostController, vm: RecordViewModel = hiltViewModel()) {
-    val ctx = LocalContext.current
-    val perms = buildList {
-        add(Manifest.permission.ACCESS_FINE_LOCATION)
-        if (Build.VERSION.SDK_INT >= 31) {
-            add(Manifest.permission.BLUETOOTH_SCAN)
-            add(Manifest.permission.BLUETOOTH_CONNECT)
-        }
-        if (Build.VERSION.SDK_INT >= 33) add(Manifest.permission.POST_NOTIFICATIONS)
-    }
-    val permState = rememberMultiplePermissionsState(perms)
-    LaunchedEffect(Unit) { if (!permState.allPermissionsGranted) permState.launchMultiplePermissionRequest() }
+fun RecordScreen(vm: RecordViewModel = hiltViewModel()) {
+    val hud by vm.hud.collectAsState()
+    val name by vm.routeName.collectAsState()
 
-    val bleState by vm.bleState.collectAsState()
-    val devices by vm.devices.collectAsState()
-    val hz by vm.hz.collectAsState()
-    val rec by vm.recStatus.collectAsState()
-    val count by vm.sampleCount.collectAsState()
-    val rssi by vm.rssi.collectAsState()
-    var routeName by remember { mutableStateOf("Ruta moto") }
+    LaunchedEffect(Unit) { vm.startGps() }
 
-    Scaffold(topBar = {
-        TopAppBar(title = { Text("MotoTrack WIT") }, actions = {
-            IconButton(onClick = { nav.navigate("routes") }) { Icon(Icons.Default.List, null) }
-            IconButton(onClick = { nav.navigate("debug") }) { Icon(Icons.Default.BugReport, null) }
-        })
-    }) { p ->
-        Column(Modifier.padding(p).padding(16.dp).fillMaxSize(), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+    Scaffold(topBar = { TopAppBar(title = { Text("MotoTrack WIT") }) }) { pad ->
+        Column(
+            modifier = Modifier
+                .padding(pad)
+                .padding(12.dp)
+                .verticalScroll(rememberScrollState()),
+            verticalArrangement = Arrangement.spacedBy(12.dp)
+        ) {
 
-            Card(Modifier.fillMaxWidth()) {
-                Column(Modifier.padding(12.dp)) {
-                    Text("Sensor BLE", style = MaterialTheme.typography.titleMedium)
-                    Text("Estado: ${bleState::class.simpleName} ${rssi?.let { "RSSI $it dBm" } ?: ""}")
+            // ---- ESTADO DE SENSORES ----
+            ElevatedCard(Modifier.fillMaxWidth()) {
+                Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    Text("Sensores", style = MaterialTheme.typography.titleMedium)
+
+                    SensorRow(
+                        connected = hud.bleConnected,
+                        iconOn = Icons.Default.Bluetooth,
+                        iconOff = Icons.Default.BluetoothDisabled,
+                        label = "WT901BLECL5.0",
+                        detail = if (hud.bleConnected)
+                            "${hud.bleDeviceName ?: "—"}  ·  ${"%.1f".format(hud.bleHz)} Hz  ·  RSSI ${hud.bleRssi ?: "—"}"
+                        else "Desconectado"
+                    )
                     Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                        Button(onClick = { vm.startScan() }) { Text("Buscar") }
-                        OutlinedButton(onClick = { vm.disconnect() }) { Text("Desconectar") }
-                    }
-                    if (devices.isNotEmpty() && bleState !is BleState.Connected) {
-                        LazyColumn(Modifier.heightIn(max = 180.dp)) {
-                            items(devices) { d ->
-                                ListItem(
-                                    headlineContent = { Text(d.name ?: d.address) },
-                                    supportingContent = { Text("${d.address} · ${d.rssi} dBm") },
-                                    trailingContent = {
-                                        TextButton(onClick = { vm.connect(d.address) }) { Text("Conectar") }
-                                    }
-                                )
-                            }
+                        Button(onClick = { vm.scanAndConnectBle() }, enabled = !hud.bleConnected) {
+                            Text("Buscar y conectar")
                         }
+                        OutlinedButton(onClick = { vm.disconnectBle() }, enabled = hud.bleConnected) {
+                            Text("Desconectar")
+                        }
+                    }
+
+                    Divider()
+
+                    SensorRow(
+                        connected = hud.gpsFix,
+                        iconOn = Icons.Default.GpsFixed,
+                        iconOff = Icons.Default.GpsOff,
+                        label = "GPS interno",
+                        detail = when {
+                            !hud.gpsProviderEnabled -> "Proveedor desactivado"
+                            !hud.gpsFix -> "Buscando fix…"
+                            else -> "${"%.1f".format(hud.gpsHz)} Hz  ·  ±${hud.hAcc?.let { "%.0f".format(it) } ?: "—"} m"
+                        }
+                    )
+                }
+            }
+
+            // ---- HUD EN VIVO ----
+            ElevatedCard(Modifier.fillMaxWidth()) {
+                Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                    Text("Telemetría en vivo", style = MaterialTheme.typography.titleMedium)
+
+                    BigMetric("Velocidad", "%.1f".format(hud.speedKmh), "km/h")
+
+                    Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+                        Metric("Roll (incl.)", "%+.1f°".format(hud.roll))
+                        Metric("Pitch", "%+.1f°".format(hud.pitch))
+                        Metric("Yaw", "%.1f°".format(hud.yaw))
+                    }
+                    Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+                        Metric("Ax", "%+.2f g".format(hud.ax))
+                        Metric("Ay", "%+.2f g".format(hud.ay))
+                        Metric("Az", "%+.2f g".format(hud.az))
+                    }
+                    Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+                        Metric("ωx", "%+.0f°/s".format(hud.wx))
+                        Metric("ωy", "%+.0f°/s".format(hud.wy))
+                        Metric("ωz", "%+.0f°/s".format(hud.wz))
+                    }
+                    Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+                        Metric("|G|", "%.2f g".format(hud.gMag))
+                        Metric("Temp", "%.1f°C".format(hud.temp))
+                        Metric("Bat", hud.battery?.let { "$it%" } ?: "—")
+                    }
+
+                    Divider()
+                    Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+                        Metric("Lat", hud.lat?.let { "%.6f".format(it) } ?: "—")
+                        Metric("Lon", hud.lon?.let { "%.6f".format(it) } ?: "—")
+                    }
+                    Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+                        Metric("Alt", hud.altitude?.let { "%.0f m".format(it) } ?: "—")
+                        Metric("Rumbo", hud.bearing?.let { "%.0f°".format(it) } ?: "—")
                     }
                 }
             }
 
-            OutlinedTextField(value = routeName, onValueChange = { routeName = it },
-                label = { Text("Nombre de la ruta") }, modifier = Modifier.fillMaxWidth())
+            // ---- CONTROL DE RUTA ----
+            ElevatedCard(Modifier.fillMaxWidth()) {
+                Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    Text("Ruta", style = MaterialTheme.typography.titleMedium)
+                    OutlinedTextField(
+                        value = name, onValueChange = vm::setRouteName,
+                        label = { Text("Nombre de la ruta") },
+                        singleLine = true, modifier = Modifier.fillMaxWidth()
+                    )
 
-            Card(Modifier.fillMaxWidth()) {
-                Column(Modifier.padding(12.dp)) {
-                    Text("Grabación: $rec", style = MaterialTheme.typography.titleMedium)
-                    Text("Muestras: $count   ·   Hz: %.1f".format(hz))
-                    Spacer(Modifier.height(8.dp))
                     Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                        Button(enabled = rec == RecordingForegroundService.Status.IDLE && bleState is BleState.Connected,
-                            onClick = { sendAction(ctx, RecordingForegroundService.ACTION_START, routeName) }) {
-                            Icon(Icons.Default.PlayArrow, null); Text("Iniciar")
+                        when (hud.recording) {
+                            RecordingState.IDLE, RecordingState.STOPPED ->
+                                Button(onClick = { vm.start() }, enabled = hud.bleConnected) { Text("Iniciar") }
+                            RecordingState.RECORDING -> {
+                                OutlinedButton(onClick = { vm.pause() }) { Text("Pausar") }
+                                Button(onClick = { vm.stop() }) { Text("Detener") }
+                            }
+                            RecordingState.PAUSED -> {
+                                Button(onClick = { vm.resume() }) { Text("Reanudar") }
+                                Button(onClick = { vm.stop() }) { Text("Detener") }
+                            }
                         }
-                        Button(enabled = rec == RecordingForegroundService.Status.RECORDING,
-                            onClick = { sendAction(ctx, RecordingForegroundService.ACTION_PAUSE) }) {
-                            Icon(Icons.Default.Pause, null); Text("Pausar")
-                        }
-                        Button(enabled = rec == RecordingForegroundService.Status.PAUSED,
-                            onClick = { sendAction(ctx, RecordingForegroundService.ACTION_RESUME) }) {
-                            Icon(Icons.Default.PlayArrow, null); Text("Reanudar")
-                        }
-                        Button(enabled = rec != RecordingForegroundService.Status.IDLE,
-                            colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error),
-                            onClick = { sendAction(ctx, RecordingForegroundService.ACTION_STOP) }) {
-                            Icon(Icons.Default.Stop, null); Text("Finalizar")
-                        }
+                    }
+
+                    Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+                        Metric("Estado", hud.recording.name)
+                        Metric("Muestras", hud.sampleCount.toString())
+                        Metric("Duración", formatDuration(hud.durationMs))
                     }
                 }
             }
@@ -110,8 +154,45 @@ fun RecordScreen(nav: NavHostController, vm: RecordViewModel = hiltViewModel()) 
     }
 }
 
-private fun sendAction(ctx: android.content.Context, action: String, routeName: String? = null) {
-    val i = Intent(ctx, RecordingForegroundService::class.java).setAction(action)
-    if (routeName != null) i.putExtra(RecordingForegroundService.EXTRA_ROUTE_NAME, routeName)
-    if (Build.VERSION.SDK_INT >= 26) ctx.startForegroundService(i) else ctx.startService(i)
+@Composable
+private fun SensorRow(
+    connected: Boolean,
+    iconOn: androidx.compose.ui.graphics.vector.ImageVector,
+    iconOff: androidx.compose.ui.graphics.vector.ImageVector,
+    label: String, detail: String
+) {
+    val color = if (connected) Color(0xFF22C55E) else Color(0xFFEF4444)
+    Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+        Box(
+            Modifier.size(36.dp).background(color.copy(alpha = 0.15f), RoundedCornerShape(8.dp)),
+            contentAlignment = Alignment.Center
+        ) { Icon(if (connected) iconOn else iconOff, contentDescription = null, tint = color) }
+        Column {
+            Text(label, fontWeight = FontWeight.SemiBold)
+            Text(detail, style = MaterialTheme.typography.bodySmall)
+        }
+    }
+}
+
+@Composable
+private fun BigMetric(label: String, value: String, unit: String) {
+    Row(verticalAlignment = Alignment.Bottom, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+        Text(value, fontSize = 44.sp, fontWeight = FontWeight.Bold, fontFamily = FontFamily.Monospace)
+        Text(unit, fontSize = 16.sp, modifier = Modifier.padding(bottom = 8.dp))
+        Spacer(Modifier.weight(1f))
+        Text(label, style = MaterialTheme.typography.labelMedium)
+    }
+}
+
+@Composable
+private fun Metric(label: String, value: String) {
+    Column {
+        Text(label, style = MaterialTheme.typography.labelSmall)
+        Text(value, fontFamily = FontFamily.Monospace, fontWeight = FontWeight.Medium)
+    }
+}
+
+private fun formatDuration(ms: Long): String {
+    val s = ms / 1000
+    return "%02d:%02d:%02d".format(s/3600, (s%3600)/60, s%60)
 }

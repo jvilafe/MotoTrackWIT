@@ -62,7 +62,7 @@ class SampleFusionEngine @Inject constructor(
                     vGps = loc.speed, bearing = loc.bearing,
                     hAcc = if (loc.hasAccuracy()) loc.accuracy else -1f,
                     ax = imu.ax, ay = imu.ay, az = imu.az,
-                    gx = imu.gx, gy = imu.gy, gz = imu.gz,
+                    gx = imu.wx, gy = imu.wy, gz = imu.wz,
                     roll = imu.roll, pitch = imu.pitch, yaw = imu.yaw,
                     gMag = gMag
                 ))

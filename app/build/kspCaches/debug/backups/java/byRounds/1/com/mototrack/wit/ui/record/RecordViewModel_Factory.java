@@ -1,7 +1,8 @@
 package com.mototrack.wit.ui.record;
 
 import com.mototrack.wit.ble.WitBleManager;
-import com.mototrack.wit.fusion.SampleFusionEngine;
+import com.mototrack.wit.gps.GpsLocationSource;
+import com.mototrack.wit.recording.RecordingController;
 import dagger.internal.DaggerGenerated;
 import dagger.internal.Factory;
 import dagger.internal.QualifierMetadata;
@@ -26,25 +27,29 @@ import javax.inject.Provider;
 public final class RecordViewModel_Factory implements Factory<RecordViewModel> {
   private final Provider<WitBleManager> bleProvider;
 
-  private final Provider<SampleFusionEngine> fusionProvider;
+  private final Provider<GpsLocationSource> gpsProvider;
+
+  private final Provider<RecordingController> controllerProvider;
 
   public RecordViewModel_Factory(Provider<WitBleManager> bleProvider,
-      Provider<SampleFusionEngine> fusionProvider) {
+      Provider<GpsLocationSource> gpsProvider, Provider<RecordingController> controllerProvider) {
     this.bleProvider = bleProvider;
-    this.fusionProvider = fusionProvider;
+    this.gpsProvider = gpsProvider;
+    this.controllerProvider = controllerProvider;
   }
 
   @Override
   public RecordViewModel get() {
-    return newInstance(bleProvider.get(), fusionProvider.get());
+    return newInstance(bleProvider.get(), gpsProvider.get(), controllerProvider.get());
   }
 
   public static RecordViewModel_Factory create(Provider<WitBleManager> bleProvider,
-      Provider<SampleFusionEngine> fusionProvider) {
-    return new RecordViewModel_Factory(bleProvider, fusionProvider);
+      Provider<GpsLocationSource> gpsProvider, Provider<RecordingController> controllerProvider) {
+    return new RecordViewModel_Factory(bleProvider, gpsProvider, controllerProvider);
   }
 
-  public static RecordViewModel newInstance(WitBleManager ble, SampleFusionEngine fusion) {
-    return new RecordViewModel(ble, fusion);
+  public static RecordViewModel newInstance(WitBleManager ble, GpsLocationSource gps,
+      RecordingController controller) {
+    return new RecordViewModel(ble, gps, controller);
   }
 }
