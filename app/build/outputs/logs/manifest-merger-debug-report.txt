@@ -5,34 +5,29 @@ INJECTED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:2:1-58:12
 INJECTED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:2:1-58:12
 INJECTED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:2:1-58:12
 MERGED from [com.google.android.gms:play-services-location:21.3.0] C:\Users\jvila\.gradle\caches\transforms-4\69d4fbfb9fe59482c9218e85ae437671\transformed\play-services-location-21.3.0\AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\jvila\.gradle\caches\transforms-4\3191898e392c0e5981d3cc21f46c5d9c\transformed\play-services-auth-21.2.0\AndroidManifest.xml:17:1-40:12
-MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] C:\Users\jvila\.gradle\caches\transforms-4\cf22f2d87184ede2ed3fd6076670b1d1\transformed\play-services-auth-api-phone-18.0.2\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-auth-base:18.0.10] C:\Users\jvila\.gradle\caches\transforms-4\a609a9cdd8679f7e981dacfe3d4aeb9b\transformed\play-services-auth-base-18.0.10\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\jvila\.gradle\caches\transforms-4\f9b53f72aa2e635c4ee9d17caa741f94\transformed\play-services-fido-20.0.1\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\jvila\.gradle\caches\transforms-4\8acd437e785057599329d139f988e796\transformed\play-services-base-18.5.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-tasks:18.2.0] C:\Users\jvila\.gradle\caches\transforms-4\360a85aabec4b2613d94daa0c1c13ac9\transformed\play-services-tasks-18.2.0\AndroidManifest.xml:2:1-5:12
 MERGED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\jvila\.gradle\caches\transforms-4\4e6bfa8eaa8c97d6c236cb570810d880\transformed\play-services-basement-18.4.0\AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.hilt:hilt-work:1.2.0] C:\Users\jvila\.gradle\caches\transforms-4\a1e6373cfb1c406fd5a0e8b31a032c2b\transformed\hilt-work-1.2.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] C:\Users\jvila\.gradle\caches\transforms-4\4cae187e4efbeebdd8ab30c15ba946b4\transformed\hilt-navigation-compose-1.2.0\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.hilt:hilt-navigation:1.2.0] C:\Users\jvila\.gradle\caches\transforms-4\8f8b824caf2b0b18fcb7da72f5bada42\transformed\hilt-navigation-1.2.0\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.dagger:hilt-android:2.51.1] C:\Users\jvila\.gradle\caches\transforms-4\0ea547e34a4144852417b21f515691d6\transformed\hilt-android-2.51.1\AndroidManifest.xml:16:1-19:12
-MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:2:1-20:12
-MERGED from [androidx.fragment:fragment:1.8.2] C:\Users\jvila\.gradle\caches\transforms-4\818b7e61c1ed04f04424e52372498293\transformed\fragment-1.8.2\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.loader:loader:1.1.0] C:\Users\jvila\.gradle\caches\transforms-4\978dd73e3b034d75f83ed23beaa9da28\transformed\loader-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.work:work-runtime-ktx:2.9.0] C:\Users\jvila\.gradle\caches\transforms-4\1dc2fa444df99179c1bdac6b54ff2070\transformed\work-runtime-ktx-2.9.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.work:work-runtime:2.9.0] C:\Users\jvila\.gradle\caches\transforms-4\e163954312c692485621b3f1414afc45\transformed\work-runtime-2.9.0\AndroidManifest.xml:17:1-145:12
+MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] C:\Users\jvila\.gradle\caches\transforms-4\4cae187e4efbeebdd8ab30c15ba946b4\transformed\hilt-navigation-compose-1.2.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.hilt:hilt-navigation:1.2.0] C:\Users\jvila\.gradle\caches\transforms-4\8f8b824caf2b0b18fcb7da72f5bada42\transformed\hilt-navigation-1.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.7.7] C:\Users\jvila\.gradle\caches\transforms-4\11c4009051a07b26d2a02d3e01c4c90b\transformed\navigation-common-2.7.7\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.7.7] C:\Users\jvila\.gradle\caches\transforms-4\aa4fea19553439817f8e82803514ee48\transformed\navigation-runtime-2.7.7\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] C:\Users\jvila\.gradle\caches\transforms-4\5589f9deda2a2f5c9593e4cb7ac488cd\transformed\navigation-common-ktx-2.7.7\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] C:\Users\jvila\.gradle\caches\transforms-4\e02dfe5e8abf823516d2b9dba8872af8\transformed\navigation-runtime-ktx-2.7.7\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-compose:2.7.7] C:\Users\jvila\.gradle\caches\transforms-4\b5b629669d85c20729c336d12e417b16\transformed\navigation-compose-2.7.7\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.accompanist:accompanist-permissions:0.34.0] C:\Users\jvila\.gradle\caches\transforms-4\f6372e071089864383bb889b0ed65b84\transformed\accompanist-permissions-0.34.0\AndroidManifest.xml:17:1-23:12
+MERGED from [com.google.dagger:hilt-android:2.51.1] C:\Users\jvila\.gradle\caches\transforms-4\0ea547e34a4144852417b21f515691d6\transformed\hilt-android-2.51.1\AndroidManifest.xml:16:1-19:12
+MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:2:1-20:12
+MERGED from [androidx.fragment:fragment:1.8.2] C:\Users\jvila\.gradle\caches\transforms-4\818b7e61c1ed04f04424e52372498293\transformed\fragment-1.8.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.activity:activity:1.9.0] C:\Users\jvila\.gradle\caches\transforms-4\afd08a4e0eecda5da807b9f1f9dfbeb8\transformed\activity-1.9.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity-ktx:1.9.0] C:\Users\jvila\.gradle\caches\transforms-4\fb0b5d92bc8a7c7cf39afb149924b6a2\transformed\activity-ktx-1.9.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material3:material3-android:1.2.1] C:\Users\jvila\.gradle\caches\transforms-4\eb487ca373dd58260de681340dd99cc4\transformed\material3-release\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity-compose:1.9.0] C:\Users\jvila\.gradle\caches\transforms-4\967ae11fc85a9d81785b883d0ce043a1\transformed\activity-compose-1.9.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\jvila\.gradle\caches\transforms-4\80122d01dfcfcdd5350df3a623174d33\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\jvila\.gradle\caches\transforms-4\cbec04290178eded2b51c43f210cc0e8\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\jvila\.gradle\caches\transforms-4\e04f2412c16999cf4db744f75a8b5a5c\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.compose.material:material-icons-core-android:1.6.8] C:\Users\jvila\.gradle\caches\transforms-4\a67c50d86e11dd167fe7f81c2dd38608\transformed\material-icons-core-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material:material-icons-extended-android:1.6.8] C:\Users\jvila\.gradle\caches\transforms-4\80ea46f149721269f8d9e04ed25cc9dc\transformed\material-icons-extended-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material:material-ripple-android:1.6.8] C:\Users\jvila\.gradle\caches\transforms-4\7cb82b5ccc69c550168c4110f10d2ed7\transformed\material-ripple-release\AndroidManifest.xml:2:1-7:12
@@ -100,10 +95,10 @@ MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\t
 		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:6:5-79
-MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:15:5-79
-MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:15:5-79
 MERGED from [androidx.work:work-runtime:2.9.0] C:\Users\jvila\.gradle\caches\transforms-4\e163954312c692485621b3f1414afc45\transformed\work-runtime-2.9.0\AndroidManifest.xml:24:5-79
 MERGED from [androidx.work:work-runtime:2.9.0] C:\Users\jvila\.gradle\caches\transforms-4\e163954312c692485621b3f1414afc45\transformed\work-runtime-2.9.0\AndroidManifest.xml:24:5-79
+MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:15:5-79
+MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:15:5-79
 	android:name
 		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:6:22-76
 uses-permission#android.permission.BLUETOOTH_SCAN
@@ -195,10 +190,6 @@ ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:32:5-57:19
 INJECTED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:32:5-57:19
 MERGED from [com.google.android.gms:play-services-location:21.3.0] C:\Users\jvila\.gradle\caches\transforms-4\69d4fbfb9fe59482c9218e85ae437671\transformed\play-services-location-21.3.0\AndroidManifest.xml:6:5-20
 MERGED from [com.google.android.gms:play-services-location:21.3.0] C:\Users\jvila\.gradle\caches\transforms-4\69d4fbfb9fe59482c9218e85ae437671\transformed\play-services-location-21.3.0\AndroidManifest.xml:6:5-20
-MERGED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\jvila\.gradle\caches\transforms-4\3191898e392c0e5981d3cc21f46c5d9c\transformed\play-services-auth-21.2.0\AndroidManifest.xml:22:5-38:19
-MERGED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\jvila\.gradle\caches\transforms-4\3191898e392c0e5981d3cc21f46c5d9c\transformed\play-services-auth-21.2.0\AndroidManifest.xml:22:5-38:19
-MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\jvila\.gradle\caches\transforms-4\f9b53f72aa2e635c4ee9d17caa741f94\transformed\play-services-fido-20.0.1\AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\jvila\.gradle\caches\transforms-4\f9b53f72aa2e635c4ee9d17caa741f94\transformed\play-services-fido-20.0.1\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\jvila\.gradle\caches\transforms-4\8acd437e785057599329d139f988e796\transformed\play-services-base-18.5.0\AndroidManifest.xml:4:5-6:19
 MERGED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\jvila\.gradle\caches\transforms-4\8acd437e785057599329d139f988e796\transformed\play-services-base-18.5.0\AndroidManifest.xml:4:5-6:19
 MERGED from [com.google.android.gms:play-services-tasks:18.2.0] C:\Users\jvila\.gradle\caches\transforms-4\360a85aabec4b2613d94daa0c1c13ac9\transformed\play-services-tasks-18.2.0\AndroidManifest.xml:4:5-20
@@ -277,38 +268,20 @@ INJECTED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml
 INJECTED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml
 MERGED from [com.google.android.gms:play-services-location:21.3.0] C:\Users\jvila\.gradle\caches\transforms-4\69d4fbfb9fe59482c9218e85ae437671\transformed\play-services-location-21.3.0\AndroidManifest.xml:4:5-44
 MERGED from [com.google.android.gms:play-services-location:21.3.0] C:\Users\jvila\.gradle\caches\transforms-4\69d4fbfb9fe59482c9218e85ae437671\transformed\play-services-location-21.3.0\AndroidManifest.xml:4:5-44
-MERGED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\jvila\.gradle\caches\transforms-4\3191898e392c0e5981d3cc21f46c5d9c\transformed\play-services-auth-21.2.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\jvila\.gradle\caches\transforms-4\3191898e392c0e5981d3cc21f46c5d9c\transformed\play-services-auth-21.2.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] C:\Users\jvila\.gradle\caches\transforms-4\cf22f2d87184ede2ed3fd6076670b1d1\transformed\play-services-auth-api-phone-18.0.2\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] C:\Users\jvila\.gradle\caches\transforms-4\cf22f2d87184ede2ed3fd6076670b1d1\transformed\play-services-auth-api-phone-18.0.2\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:18.0.10] C:\Users\jvila\.gradle\caches\transforms-4\a609a9cdd8679f7e981dacfe3d4aeb9b\transformed\play-services-auth-base-18.0.10\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:18.0.10] C:\Users\jvila\.gradle\caches\transforms-4\a609a9cdd8679f7e981dacfe3d4aeb9b\transformed\play-services-auth-base-18.0.10\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\jvila\.gradle\caches\transforms-4\f9b53f72aa2e635c4ee9d17caa741f94\transformed\play-services-fido-20.0.1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\jvila\.gradle\caches\transforms-4\f9b53f72aa2e635c4ee9d17caa741f94\transformed\play-services-fido-20.0.1\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\jvila\.gradle\caches\transforms-4\8acd437e785057599329d139f988e796\transformed\play-services-base-18.5.0\AndroidManifest.xml:3:5-44
 MERGED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\jvila\.gradle\caches\transforms-4\8acd437e785057599329d139f988e796\transformed\play-services-base-18.5.0\AndroidManifest.xml:3:5-44
 MERGED from [com.google.android.gms:play-services-tasks:18.2.0] C:\Users\jvila\.gradle\caches\transforms-4\360a85aabec4b2613d94daa0c1c13ac9\transformed\play-services-tasks-18.2.0\AndroidManifest.xml:3:5-44
 MERGED from [com.google.android.gms:play-services-tasks:18.2.0] C:\Users\jvila\.gradle\caches\transforms-4\360a85aabec4b2613d94daa0c1c13ac9\transformed\play-services-tasks-18.2.0\AndroidManifest.xml:3:5-44
 MERGED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\jvila\.gradle\caches\transforms-4\4e6bfa8eaa8c97d6c236cb570810d880\transformed\play-services-basement-18.4.0\AndroidManifest.xml:3:5-44
 MERGED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\jvila\.gradle\caches\transforms-4\4e6bfa8eaa8c97d6c236cb570810d880\transformed\play-services-basement-18.4.0\AndroidManifest.xml:3:5-44
-MERGED from [androidx.hilt:hilt-work:1.2.0] C:\Users\jvila\.gradle\caches\transforms-4\a1e6373cfb1c406fd5a0e8b31a032c2b\transformed\hilt-work-1.2.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.hilt:hilt-work:1.2.0] C:\Users\jvila\.gradle\caches\transforms-4\a1e6373cfb1c406fd5a0e8b31a032c2b\transformed\hilt-work-1.2.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] C:\Users\jvila\.gradle\caches\transforms-4\4cae187e4efbeebdd8ab30c15ba946b4\transformed\hilt-navigation-compose-1.2.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] C:\Users\jvila\.gradle\caches\transforms-4\4cae187e4efbeebdd8ab30c15ba946b4\transformed\hilt-navigation-compose-1.2.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.hilt:hilt-navigation:1.2.0] C:\Users\jvila\.gradle\caches\transforms-4\8f8b824caf2b0b18fcb7da72f5bada42\transformed\hilt-navigation-1.2.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.hilt:hilt-navigation:1.2.0] C:\Users\jvila\.gradle\caches\transforms-4\8f8b824caf2b0b18fcb7da72f5bada42\transformed\hilt-navigation-1.2.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.dagger:hilt-android:2.51.1] C:\Users\jvila\.gradle\caches\transforms-4\0ea547e34a4144852417b21f515691d6\transformed\hilt-android-2.51.1\AndroidManifest.xml:18:3-42
-MERGED from [com.google.dagger:hilt-android:2.51.1] C:\Users\jvila\.gradle\caches\transforms-4\0ea547e34a4144852417b21f515691d6\transformed\hilt-android-2.51.1\AndroidManifest.xml:18:3-42
-MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:5:5-44
-MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:5:5-44
-MERGED from [androidx.fragment:fragment:1.8.2] C:\Users\jvila\.gradle\caches\transforms-4\818b7e61c1ed04f04424e52372498293\transformed\fragment-1.8.2\AndroidManifest.xml:5:5-44
-MERGED from [androidx.fragment:fragment:1.8.2] C:\Users\jvila\.gradle\caches\transforms-4\818b7e61c1ed04f04424e52372498293\transformed\fragment-1.8.2\AndroidManifest.xml:5:5-44
-MERGED from [androidx.loader:loader:1.1.0] C:\Users\jvila\.gradle\caches\transforms-4\978dd73e3b034d75f83ed23beaa9da28\transformed\loader-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.loader:loader:1.1.0] C:\Users\jvila\.gradle\caches\transforms-4\978dd73e3b034d75f83ed23beaa9da28\transformed\loader-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.work:work-runtime-ktx:2.9.0] C:\Users\jvila\.gradle\caches\transforms-4\1dc2fa444df99179c1bdac6b54ff2070\transformed\work-runtime-ktx-2.9.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.work:work-runtime-ktx:2.9.0] C:\Users\jvila\.gradle\caches\transforms-4\1dc2fa444df99179c1bdac6b54ff2070\transformed\work-runtime-ktx-2.9.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.work:work-runtime:2.9.0] C:\Users\jvila\.gradle\caches\transforms-4\e163954312c692485621b3f1414afc45\transformed\work-runtime-2.9.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.work:work-runtime:2.9.0] C:\Users\jvila\.gradle\caches\transforms-4\e163954312c692485621b3f1414afc45\transformed\work-runtime-2.9.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] C:\Users\jvila\.gradle\caches\transforms-4\4cae187e4efbeebdd8ab30c15ba946b4\transformed\hilt-navigation-compose-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] C:\Users\jvila\.gradle\caches\transforms-4\4cae187e4efbeebdd8ab30c15ba946b4\transformed\hilt-navigation-compose-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.hilt:hilt-navigation:1.2.0] C:\Users\jvila\.gradle\caches\transforms-4\8f8b824caf2b0b18fcb7da72f5bada42\transformed\hilt-navigation-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.hilt:hilt-navigation:1.2.0] C:\Users\jvila\.gradle\caches\transforms-4\8f8b824caf2b0b18fcb7da72f5bada42\transformed\hilt-navigation-1.2.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.navigation:navigation-common:2.7.7] C:\Users\jvila\.gradle\caches\transforms-4\11c4009051a07b26d2a02d3e01c4c90b\transformed\navigation-common-2.7.7\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-common:2.7.7] C:\Users\jvila\.gradle\caches\transforms-4\11c4009051a07b26d2a02d3e01c4c90b\transformed\navigation-common-2.7.7\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-runtime:2.7.7] C:\Users\jvila\.gradle\caches\transforms-4\aa4fea19553439817f8e82803514ee48\transformed\navigation-runtime-2.7.7\AndroidManifest.xml:20:5-44
@@ -321,6 +294,12 @@ MERGED from [androidx.navigation:navigation-compose:2.7.7] C:\Users\jvila\.gradl
 MERGED from [androidx.navigation:navigation-compose:2.7.7] C:\Users\jvila\.gradle\caches\transforms-4\b5b629669d85c20729c336d12e417b16\transformed\navigation-compose-2.7.7\AndroidManifest.xml:5:5-44
 MERGED from [com.google.accompanist:accompanist-permissions:0.34.0] C:\Users\jvila\.gradle\caches\transforms-4\f6372e071089864383bb889b0ed65b84\transformed\accompanist-permissions-0.34.0\AndroidManifest.xml:21:5-44
 MERGED from [com.google.accompanist:accompanist-permissions:0.34.0] C:\Users\jvila\.gradle\caches\transforms-4\f6372e071089864383bb889b0ed65b84\transformed\accompanist-permissions-0.34.0\AndroidManifest.xml:21:5-44
+MERGED from [com.google.dagger:hilt-android:2.51.1] C:\Users\jvila\.gradle\caches\transforms-4\0ea547e34a4144852417b21f515691d6\transformed\hilt-android-2.51.1\AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:hilt-android:2.51.1] C:\Users\jvila\.gradle\caches\transforms-4\0ea547e34a4144852417b21f515691d6\transformed\hilt-android-2.51.1\AndroidManifest.xml:18:3-42
+MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:5:5-44
+MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.8.2] C:\Users\jvila\.gradle\caches\transforms-4\818b7e61c1ed04f04424e52372498293\transformed\fragment-1.8.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.8.2] C:\Users\jvila\.gradle\caches\transforms-4\818b7e61c1ed04f04424e52372498293\transformed\fragment-1.8.2\AndroidManifest.xml:5:5-44
 MERGED from [androidx.activity:activity:1.9.0] C:\Users\jvila\.gradle\caches\transforms-4\afd08a4e0eecda5da807b9f1f9dfbeb8\transformed\activity-1.9.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity:1.9.0] C:\Users\jvila\.gradle\caches\transforms-4\afd08a4e0eecda5da807b9f1f9dfbeb8\transformed\activity-1.9.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity-ktx:1.9.0] C:\Users\jvila\.gradle\caches\transforms-4\fb0b5d92bc8a7c7cf39afb149924b6a2\transformed\activity-ktx-1.9.0\AndroidManifest.xml:5:5-44
@@ -333,6 +312,8 @@ MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\jvila\.gradle\ca
 MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\jvila\.gradle\caches\transforms-4\80122d01dfcfcdd5350df3a623174d33\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\jvila\.gradle\caches\transforms-4\cbec04290178eded2b51c43f210cc0e8\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\jvila\.gradle\caches\transforms-4\cbec04290178eded2b51c43f210cc0e8\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\jvila\.gradle\caches\transforms-4\e04f2412c16999cf4db744f75a8b5a5c\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\jvila\.gradle\caches\transforms-4\e04f2412c16999cf4db744f75a8b5a5c\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.compose.material:material-icons-core-android:1.6.8] C:\Users\jvila\.gradle\caches\transforms-4\a67c50d86e11dd167fe7f81c2dd38608\transformed\material-icons-core-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.material:material-icons-core-android:1.6.8] C:\Users\jvila\.gradle\caches\transforms-4\a67c50d86e11dd167fe7f81c2dd38608\transformed\material-icons-core-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.material:material-icons-extended-android:1.6.8] C:\Users\jvila\.gradle\caches\transforms-4\80ea46f149721269f8d9e04ed25cc9dc\transformed\material-icons-extended-release\AndroidManifest.xml:5:5-44
@@ -435,26 +416,6 @@ MERGED from [com.google.dagger:dagger-lint-aar:2.51.1] C:\Users\jvila\.gradle\ca
 		INJECTED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml
-activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\jvila\.gradle\caches\transforms-4\3191898e392c0e5981d3cc21f46c5d9c\transformed\play-services-auth-21.2.0\AndroidManifest.xml:23:9-27:75
-	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\jvila\.gradle\caches\transforms-4\3191898e392c0e5981d3cc21f46c5d9c\transformed\play-services-auth-21.2.0\AndroidManifest.xml:25:13-46
-	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\jvila\.gradle\caches\transforms-4\3191898e392c0e5981d3cc21f46c5d9c\transformed\play-services-auth-21.2.0\AndroidManifest.xml:26:13-37
-	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\jvila\.gradle\caches\transforms-4\3191898e392c0e5981d3cc21f46c5d9c\transformed\play-services-auth-21.2.0\AndroidManifest.xml:27:13-72
-	android:name
-		ADDED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\jvila\.gradle\caches\transforms-4\3191898e392c0e5981d3cc21f46c5d9c\transformed\play-services-auth-21.2.0\AndroidManifest.xml:24:13-93
-service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\jvila\.gradle\caches\transforms-4\3191898e392c0e5981d3cc21f46c5d9c\transformed\play-services-auth-21.2.0\AndroidManifest.xml:33:9-37:51
-	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\jvila\.gradle\caches\transforms-4\3191898e392c0e5981d3cc21f46c5d9c\transformed\play-services-auth-21.2.0\AndroidManifest.xml:35:13-36
-	android:visibleToInstantApps
-		ADDED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\jvila\.gradle\caches\transforms-4\3191898e392c0e5981d3cc21f46c5d9c\transformed\play-services-auth-21.2.0\AndroidManifest.xml:37:13-48
-	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\jvila\.gradle\caches\transforms-4\3191898e392c0e5981d3cc21f46c5d9c\transformed\play-services-auth-21.2.0\AndroidManifest.xml:36:13-107
-	android:name
-		ADDED from [com.google.android.gms:play-services-auth:21.2.0] C:\Users\jvila\.gradle\caches\transforms-4\3191898e392c0e5981d3cc21f46c5d9c\transformed\play-services-auth-21.2.0\AndroidManifest.xml:34:13-89
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\jvila\.gradle\caches\transforms-4\8acd437e785057599329d139f988e796\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
 	android:exported
@@ -469,22 +430,6 @@ ADDED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\jvila
 		ADDED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\jvila\.gradle\caches\transforms-4\4e6bfa8eaa8c97d6c236cb570810d880\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\jvila\.gradle\caches\transforms-4\4e6bfa8eaa8c97d6c236cb570810d880\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
-uses-feature#0x00030000
-ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:7:5-9:35
-	android:glEsVersion
-		ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:8:9-41
-	android:required
-		ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:9:9-32
-uses-feature#android.hardware.wifi
-ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:10:5-12:36
-	android:required
-		ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:12:9-33
-	android:name
-		ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:11:9-45
-uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:16:5-76
-	android:name
-		ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:16:22-73
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
 ADDED from [androidx.work:work-runtime:2.9.0] C:\Users\jvila\.gradle\caches\transforms-4\e163954312c692485621b3f1414afc45\transformed\work-runtime-2.9.0\AndroidManifest.xml:25:5-81
 	android:name
@@ -715,6 +660,22 @@ action#androidx.work.diagnostics.REQUEST_DIAGNOSTICS
 ADDED from [androidx.work:work-runtime:2.9.0] C:\Users\jvila\.gradle\caches\transforms-4\e163954312c692485621b3f1414afc45\transformed\work-runtime-2.9.0\AndroidManifest.xml:140:17-88
 	android:name
 		ADDED from [androidx.work:work-runtime:2.9.0] C:\Users\jvila\.gradle\caches\transforms-4\e163954312c692485621b3f1414afc45\transformed\work-runtime-2.9.0\AndroidManifest.xml:140:25-85
+uses-feature#0x00030000
+ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:7:5-9:35
+	android:glEsVersion
+		ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:8:9-41
+	android:required
+		ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:9:9-32
+uses-feature#android.hardware.wifi
+ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:10:5-12:36
+	android:required
+		ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:12:9-33
+	android:name
+		ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:11:9-45
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:16:5-76
+	android:name
+		ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:16:22-73
 meta-data#androidx.emoji2.text.EmojiCompatInitializer
 ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\jvila\.gradle\caches\transforms-4\2fb3d2fe52e5c3c007be666fb0e14ca0\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
 	android:value

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.mototrack.wit.app-mergeDebugResources-63:/values-zh-rCN/values-zh-rCN.xml",
+            "outputFile": "com.mototrack.wit.app-mergeDebugResources-61:/values-zh-rCN/values-zh-rCN.xml",
             "map": [
                 {
                     "source": "C:\\Users\\jvila\\.gradle\\caches\\transforms-4\\f57a67a8244d1c76074351c210653596\\transformed\\android-sdk-11.5.2\\res\\values-zh-rCN\\values-zh-rCN.xml",

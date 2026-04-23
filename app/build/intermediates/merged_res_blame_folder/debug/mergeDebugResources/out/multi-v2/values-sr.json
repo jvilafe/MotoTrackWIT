@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.mototrack.wit.app-mergeDebugResources-63:/values-sr/values-sr.xml",
+            "outputFile": "com.mototrack.wit.app-mergeDebugResources-61:/values-sr/values-sr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\jvila\\.gradle\\caches\\transforms-4\\8acd437e785057599329d139f988e796\\transformed\\play-services-base-18.5.0\\res\\values-sr\\values.xml",

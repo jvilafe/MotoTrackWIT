@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.mototrack.wit.app-mergeDebugResources-63:/values-en/values-en.xml",
+            "outputFile": "com.mototrack.wit.app-mergeDebugResources-61:/values-en/values-en.xml",
             "map": [
                 {
                     "source": "Z:\\GITHub\\MotoTrackWIT\\app\\src\\main\\res\\values-en\\strings.xml",

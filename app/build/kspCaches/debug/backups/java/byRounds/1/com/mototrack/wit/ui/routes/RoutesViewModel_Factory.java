@@ -1,6 +1,5 @@
 package com.mototrack.wit.ui.routes;
 
-import android.content.Context;
 import com.mototrack.wit.data.RouteRepository;
 import dagger.internal.DaggerGenerated;
 import dagger.internal.Factory;
@@ -10,7 +9,7 @@ import javax.annotation.processing.Generated;
 import javax.inject.Provider;
 
 @ScopeMetadata
-@QualifierMetadata("dagger.hilt.android.qualifiers.ApplicationContext")
+@QualifierMetadata
 @DaggerGenerated
 @Generated(
     value = "dagger.internal.codegen.ComponentProcessor",
@@ -26,25 +25,20 @@ import javax.inject.Provider;
 public final class RoutesViewModel_Factory implements Factory<RoutesViewModel> {
   private final Provider<RouteRepository> repoProvider;
 
-  private final Provider<Context> ctxProvider;
-
-  public RoutesViewModel_Factory(Provider<RouteRepository> repoProvider,
-      Provider<Context> ctxProvider) {
+  public RoutesViewModel_Factory(Provider<RouteRepository> repoProvider) {
     this.repoProvider = repoProvider;
-    this.ctxProvider = ctxProvider;
   }
 
   @Override
   public RoutesViewModel get() {
-    return newInstance(repoProvider.get(), ctxProvider.get());
+    return newInstance(repoProvider.get());
   }
 
-  public static RoutesViewModel_Factory create(Provider<RouteRepository> repoProvider,
-      Provider<Context> ctxProvider) {
-    return new RoutesViewModel_Factory(repoProvider, ctxProvider);
+  public static RoutesViewModel_Factory create(Provider<RouteRepository> repoProvider) {
+    return new RoutesViewModel_Factory(repoProvider);
   }
 
-  public static RoutesViewModel newInstance(RouteRepository repo, Context ctx) {
-    return new RoutesViewModel(repo, ctx);
+  public static RoutesViewModel newInstance(RouteRepository repo) {
+    return new RoutesViewModel(repo);
   }
 }

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.mototrack.wit.app-mergeDebugResources-63:/values-hu/values-hu.xml",
+            "outputFile": "com.mototrack.wit.app-mergeDebugResources-61:/values-hu/values-hu.xml",
             "map": [
                 {
                     "source": "C:\\Users\\jvila\\.gradle\\caches\\transforms-4\\f57a67a8244d1c76074351c210653596\\transformed\\android-sdk-11.5.2\\res\\values-hu\\values-hu.xml",

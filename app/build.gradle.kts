@@ -4,8 +4,6 @@ plugins {
     id("com.google.dagger.hilt.android")
     id("com.google.devtools.ksp")
     kotlin("plugin.serialization") version "1.9.24"
-    // Descomenta cuando añadas google-services.json
-    // id("com.google.gms.google-services")
 }
 
 android {
@@ -79,7 +77,6 @@ dependencies {
     implementation("com.google.dagger:hilt-android:2.51.1")
     ksp("com.google.dagger:hilt-compiler:2.51.1")
     implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
-    implementation("androidx.hilt:hilt-work:1.2.0")
     ksp("androidx.hilt:hilt-compiler:1.2.0")
 
     // Room
@@ -90,18 +87,7 @@ dependencies {
     // GPS
     implementation("com.google.android.gms:play-services-location:21.3.0")
 
-    // Google Sign-In + Drive
-    implementation("com.google.android.gms:play-services-auth:21.2.0")
-    implementation("com.google.api-client:google-api-client-android:2.6.0") {
-        exclude(group = "org.apache.httpcomponents")
-    }
-    implementation("com.google.apis:google-api-services-drive:v3-rev20240521-2.0.0") {
-        exclude(group = "org.apache.httpcomponents")
-    }
-    implementation("com.google.http-client:google-http-client-gson:1.44.2")
-    implementation("com.google.auth:google-auth-library-oauth2-http:1.23.0")
-
-    // WorkManager
+    // WorkManager (conservado para tareas locales futuras)
     implementation("androidx.work:work-runtime-ktx:2.9.0")
 
     // MapLibre Native (open-source, gratis, sin token, tiles OSM)
