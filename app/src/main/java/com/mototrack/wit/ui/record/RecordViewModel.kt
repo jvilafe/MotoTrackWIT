@@ -56,6 +56,9 @@ class RecordViewModel @Inject constructor(
     val routeName: StateFlow<String> = _routeName
     fun setRouteName(v: String) { _routeName.value = v }
 
+    /** Atajo a los stats del controller (máximos en vivo) para la pestaña Ruta. */
+    val statsForUi: StateFlow<RecordingStats> = controller.stats
+
     private val lastSample: StateFlow<WitProtocol.Sample> =
         ble.samples.stateIn(viewModelScope, SharingStarted.Eagerly, WitProtocol.Sample())
 
