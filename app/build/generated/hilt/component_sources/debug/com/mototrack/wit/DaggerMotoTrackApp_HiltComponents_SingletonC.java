@@ -27,6 +27,8 @@ import com.mototrack.wit.ui.record.RecordViewModel;
 import com.mototrack.wit.ui.record.RecordViewModel_HiltModules;
 import com.mototrack.wit.ui.routes.RoutesViewModel;
 import com.mototrack.wit.ui.routes.RoutesViewModel_HiltModules;
+import com.mototrack.wit.ui.sensors.SensorsViewModel;
+import com.mototrack.wit.ui.sensors.SensorsViewModel_HiltModules;
 import dagger.hilt.android.ActivityRetainedLifecycle;
 import dagger.hilt.android.ViewModelLifecycle;
 import dagger.hilt.android.internal.builders.ActivityComponentBuilder;
@@ -387,7 +389,7 @@ public final class DaggerMotoTrackApp_HiltComponents_SingletonC {
 
     @Override
     public Map<Class<?>, Boolean> getViewModelKeys() {
-      return LazyClassKeyMap.<Boolean>of(MapBuilder.<String, Boolean>newMapBuilder(4).put(LazyClassKeyProvider.com_mototrack_wit_ui_debug_DebugViewModel, DebugViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_mototrack_wit_ui_record_RecordViewModel, RecordViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_mototrack_wit_ui_detail_RouteDetailViewModel, RouteDetailViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_mototrack_wit_ui_routes_RoutesViewModel, RoutesViewModel_HiltModules.KeyModule.provide()).build());
+      return LazyClassKeyMap.<Boolean>of(MapBuilder.<String, Boolean>newMapBuilder(5).put(LazyClassKeyProvider.com_mototrack_wit_ui_debug_DebugViewModel, DebugViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_mototrack_wit_ui_record_RecordViewModel, RecordViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_mototrack_wit_ui_detail_RouteDetailViewModel, RouteDetailViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_mototrack_wit_ui_routes_RoutesViewModel, RoutesViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_mototrack_wit_ui_sensors_SensorsViewModel, SensorsViewModel_HiltModules.KeyModule.provide()).build());
     }
 
     @Override
@@ -407,13 +409,21 @@ public final class DaggerMotoTrackApp_HiltComponents_SingletonC {
 
     @IdentifierNameString
     private static final class LazyClassKeyProvider {
+      static String com_mototrack_wit_ui_debug_DebugViewModel = "com.mototrack.wit.ui.debug.DebugViewModel";
+
+      static String com_mototrack_wit_ui_routes_RoutesViewModel = "com.mototrack.wit.ui.routes.RoutesViewModel";
+
       static String com_mototrack_wit_ui_record_RecordViewModel = "com.mototrack.wit.ui.record.RecordViewModel";
 
       static String com_mototrack_wit_ui_detail_RouteDetailViewModel = "com.mototrack.wit.ui.detail.RouteDetailViewModel";
 
-      static String com_mototrack_wit_ui_debug_DebugViewModel = "com.mototrack.wit.ui.debug.DebugViewModel";
+      static String com_mototrack_wit_ui_sensors_SensorsViewModel = "com.mototrack.wit.ui.sensors.SensorsViewModel";
 
-      static String com_mototrack_wit_ui_routes_RoutesViewModel = "com.mototrack.wit.ui.routes.RoutesViewModel";
+      @KeepFieldType
+      DebugViewModel com_mototrack_wit_ui_debug_DebugViewModel2;
+
+      @KeepFieldType
+      RoutesViewModel com_mototrack_wit_ui_routes_RoutesViewModel2;
 
       @KeepFieldType
       RecordViewModel com_mototrack_wit_ui_record_RecordViewModel2;
@@ -422,10 +432,7 @@ public final class DaggerMotoTrackApp_HiltComponents_SingletonC {
       RouteDetailViewModel com_mototrack_wit_ui_detail_RouteDetailViewModel2;
 
       @KeepFieldType
-      DebugViewModel com_mototrack_wit_ui_debug_DebugViewModel2;
-
-      @KeepFieldType
-      RoutesViewModel com_mototrack_wit_ui_routes_RoutesViewModel2;
+      SensorsViewModel com_mototrack_wit_ui_sensors_SensorsViewModel2;
     }
   }
 
@@ -444,6 +451,8 @@ public final class DaggerMotoTrackApp_HiltComponents_SingletonC {
 
     private Provider<RoutesViewModel> routesViewModelProvider;
 
+    private Provider<SensorsViewModel> sensorsViewModelProvider;
+
     private ViewModelCImpl(SingletonCImpl singletonCImpl,
         ActivityRetainedCImpl activityRetainedCImpl, SavedStateHandle savedStateHandleParam,
         ViewModelLifecycle viewModelLifecycleParam) {
@@ -461,11 +470,12 @@ public final class DaggerMotoTrackApp_HiltComponents_SingletonC {
       this.recordViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 1);
       this.routeDetailViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 2);
       this.routesViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 3);
+      this.sensorsViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 4);
     }
 
     @Override
     public Map<Class<?>, javax.inject.Provider<ViewModel>> getHiltViewModelMap() {
-      return LazyClassKeyMap.<javax.inject.Provider<ViewModel>>of(MapBuilder.<String, javax.inject.Provider<ViewModel>>newMapBuilder(4).put(LazyClassKeyProvider.com_mototrack_wit_ui_debug_DebugViewModel, ((Provider) debugViewModelProvider)).put(LazyClassKeyProvider.com_mototrack_wit_ui_record_RecordViewModel, ((Provider) recordViewModelProvider)).put(LazyClassKeyProvider.com_mototrack_wit_ui_detail_RouteDetailViewModel, ((Provider) routeDetailViewModelProvider)).put(LazyClassKeyProvider.com_mototrack_wit_ui_routes_RoutesViewModel, ((Provider) routesViewModelProvider)).build());
+      return LazyClassKeyMap.<javax.inject.Provider<ViewModel>>of(MapBuilder.<String, javax.inject.Provider<ViewModel>>newMapBuilder(5).put(LazyClassKeyProvider.com_mototrack_wit_ui_debug_DebugViewModel, ((Provider) debugViewModelProvider)).put(LazyClassKeyProvider.com_mototrack_wit_ui_record_RecordViewModel, ((Provider) recordViewModelProvider)).put(LazyClassKeyProvider.com_mototrack_wit_ui_detail_RouteDetailViewModel, ((Provider) routeDetailViewModelProvider)).put(LazyClassKeyProvider.com_mototrack_wit_ui_routes_RoutesViewModel, ((Provider) routesViewModelProvider)).put(LazyClassKeyProvider.com_mototrack_wit_ui_sensors_SensorsViewModel, ((Provider) sensorsViewModelProvider)).build());
     }
 
     @Override
@@ -479,9 +489,11 @@ public final class DaggerMotoTrackApp_HiltComponents_SingletonC {
 
       static String com_mototrack_wit_ui_detail_RouteDetailViewModel = "com.mototrack.wit.ui.detail.RouteDetailViewModel";
 
-      static String com_mototrack_wit_ui_record_RecordViewModel = "com.mototrack.wit.ui.record.RecordViewModel";
-
       static String com_mototrack_wit_ui_debug_DebugViewModel = "com.mototrack.wit.ui.debug.DebugViewModel";
+
+      static String com_mototrack_wit_ui_sensors_SensorsViewModel = "com.mototrack.wit.ui.sensors.SensorsViewModel";
+
+      static String com_mototrack_wit_ui_record_RecordViewModel = "com.mototrack.wit.ui.record.RecordViewModel";
 
       @KeepFieldType
       RoutesViewModel com_mototrack_wit_ui_routes_RoutesViewModel2;
@@ -490,10 +502,13 @@ public final class DaggerMotoTrackApp_HiltComponents_SingletonC {
       RouteDetailViewModel com_mototrack_wit_ui_detail_RouteDetailViewModel2;
 
       @KeepFieldType
-      RecordViewModel com_mototrack_wit_ui_record_RecordViewModel2;
+      DebugViewModel com_mototrack_wit_ui_debug_DebugViewModel2;
 
       @KeepFieldType
-      DebugViewModel com_mototrack_wit_ui_debug_DebugViewModel2;
+      SensorsViewModel com_mototrack_wit_ui_sensors_SensorsViewModel2;
+
+      @KeepFieldType
+      RecordViewModel com_mototrack_wit_ui_record_RecordViewModel2;
     }
 
     private static final class SwitchingProvider<T> implements Provider<T> {
@@ -528,6 +543,9 @@ public final class DaggerMotoTrackApp_HiltComponents_SingletonC {
 
           case 3: // com.mototrack.wit.ui.routes.RoutesViewModel 
           return (T) new RoutesViewModel(singletonCImpl.routeRepositoryProvider.get());
+
+          case 4: // com.mototrack.wit.ui.sensors.SensorsViewModel 
+          return (T) new SensorsViewModel(singletonCImpl.witBleManagerProvider.get(), singletonCImpl.gpsLocationSourceProvider.get());
 
           default: throw new AssertionError(id);
         }

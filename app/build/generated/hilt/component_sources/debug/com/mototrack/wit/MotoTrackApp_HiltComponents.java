@@ -6,6 +6,7 @@ import com.mototrack.wit.ui.debug.DebugViewModel_HiltModules;
 import com.mototrack.wit.ui.detail.RouteDetailViewModel_HiltModules;
 import com.mototrack.wit.ui.record.RecordViewModel_HiltModules;
 import com.mototrack.wit.ui.routes.RoutesViewModel_HiltModules;
+import com.mototrack.wit.ui.sensors.SensorsViewModel_HiltModules;
 import dagger.Binds;
 import dagger.Component;
 import dagger.Module;
@@ -165,7 +166,8 @@ public final class MotoTrackApp_HiltComponents {
           ViewModelCBuilderModule.class,
           RecordViewModel_HiltModules.KeyModule.class,
           RouteDetailViewModel_HiltModules.KeyModule.class,
-          RoutesViewModel_HiltModules.KeyModule.class
+          RoutesViewModel_HiltModules.KeyModule.class,
+          SensorsViewModel_HiltModules.KeyModule.class
       }
   )
   @ActivityRetainedScoped
@@ -205,7 +207,8 @@ public final class MotoTrackApp_HiltComponents {
           HiltWrapper_HiltViewModelFactory_ViewModelModule.class,
           RecordViewModel_HiltModules.BindsModule.class,
           RouteDetailViewModel_HiltModules.BindsModule.class,
-          RoutesViewModel_HiltModules.BindsModule.class
+          RoutesViewModel_HiltModules.BindsModule.class,
+          SensorsViewModel_HiltModules.BindsModule.class
       }
   )
   @ViewModelScoped
