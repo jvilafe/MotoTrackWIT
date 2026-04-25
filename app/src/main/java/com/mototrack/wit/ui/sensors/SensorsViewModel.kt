@@ -50,6 +50,7 @@ class SensorsViewModel @Inject constructor(
     val scanning: StateFlow<Boolean> = _scanning.asStateFlow()
 
     private var scanJob: Job? = null
+    private var scanTimeoutJob: Job? = null
 
     private val lastSample: StateFlow<WitProtocol.Sample> =
         ble.samples.stateIn(viewModelScope, SharingStarted.Eagerly, WitProtocol.Sample())
@@ -88,6 +89,8 @@ class SensorsViewModel @Inject constructor(
         if (_scanning.value) return
 
         scanJob?.cancel()
+        scanTimeoutJob?.cancel()
+
         scanJob = viewModelScope.launch {
             _scanning.value = true
             _discovered.value = emptyList()
@@ -95,22 +98,19 @@ class SensorsViewModel @Inject constructor(
             val seen = linkedMapOf<String, WitDevice>()
 
             try {
-                val startedAt = System.currentTimeMillis()
                 ble.scan().collect { device ->
                     seen[device.address] = device
                     _discovered.value = seen.values.sortedByDescending { it.rssi }
-
-                    if (System.currentTimeMillis() - startedAt >= timeoutMs) {
-                        this.cancel()
-                    }
                 }
             } catch (_: Exception) {
+                // flujo cerrado normalmente al cancelar el job
             } finally {
                 _scanning.value = false
             }
         }
 
-        viewModelScope.launch {
+        // Timeout externo: cancela el job de escaneo al expirar.
+        scanTimeoutJob = viewModelScope.launch {
             delay(timeoutMs)
             stopScan()
         }
@@ -119,6 +119,8 @@ class SensorsViewModel @Inject constructor(
     fun stopScan() {
         scanJob?.cancel()
         scanJob = null
+        scanTimeoutJob?.cancel()
+        scanTimeoutJob = null
         _scanning.value = false
     }
 
