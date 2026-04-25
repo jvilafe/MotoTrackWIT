@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.History
 import androidx.compose.material.icons.filled.Map
+import androidx.compose.material.icons.filled.Monitor
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.Sensors
 import androidx.compose.material3.Icon
@@ -19,8 +20,9 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.mototrack.wit.ui.record.RecordScreen
+import com.mototrack.wit.ui.route.RouteTabScreen
 import com.mototrack.wit.ui.routes.RoutesScreen
+import com.mototrack.wit.ui.record.RecordScreen
 
 private sealed class BottomDestination(
     val route: String,
@@ -28,6 +30,7 @@ private sealed class BottomDestination(
     val icon: androidx.compose.ui.graphics.vector.ImageVector
 ) {
     data object Sensors : BottomDestination("sensores", "Sensores", Icons.Default.Sensors)
+    data object View : BottomDestination("view", "View", Icons.Default.Monitor)
     data object Route : BottomDestination("ruta", "Ruta", Icons.Default.PlayArrow)
     data object History : BottomDestination("historico", "Histórico", Icons.Default.History)
     data object Map : BottomDestination("mapa", "Mapa", Icons.Default.Map)
@@ -38,6 +41,7 @@ fun MainScreen() {
     val nav = rememberNavController()
     val items = listOf(
         BottomDestination.Sensors,
+        BottomDestination.View,
         BottomDestination.Route,
         BottomDestination.History,
         BottomDestination.Map
@@ -81,8 +85,14 @@ fun MainScreen() {
                 com.mototrack.wit.ui.sensors.SensorsTabScreen()
             }
 
-            composable(BottomDestination.Route.route) {
+            composable(BottomDestination.View.route) {
                 RecordScreen()
+            }
+
+            composable(BottomDestination.Route.route) {
+                RouteTabScreen(
+                    onOpenMapa = { nav.navigate(BottomDestination.Map.route) }
+                )
             }
 
             composable(BottomDestination.History.route) {

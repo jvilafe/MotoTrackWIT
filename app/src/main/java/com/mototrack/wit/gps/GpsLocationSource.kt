@@ -34,6 +34,11 @@ data class GpsSample(
 @Singleton
 class GpsLocationSource @Inject constructor(@ApplicationContext private val ctx: Context) {
 
+    companion object {
+        private const val MIN_SPEED_MS = 0.833f // ~3 km/h. Velocidades inferiores se consideran 0 para evitar jitter.
+        private const val MIN_ACCURACY_FIX = 50f // Metros. Umbral para considerar que tenemos un fix válido.
+    }
+
     private val client: FusedLocationProviderClient =
         LocationServices.getFusedLocationProviderClient(ctx)
     private val lm: LocationManager =
@@ -84,18 +89,24 @@ class GpsLocationSource @Inject constructor(@ApplicationContext private val ctx:
         val cb = object : LocationCallback() {
             override fun onLocationResult(r: LocationResult) {
                 val loc = r.lastLocation ?: return
+                val accuracy = if (loc.hasAccuracy()) loc.accuracy else 999f
+                val hasFix = accuracy <= MIN_ACCURACY_FIX
+
+                // Filtramos la velocidad si es muy baja para evitar el "baile" de números en parado
+                val rawSpeed = if (loc.hasSpeed()) loc.speed else 0f
+                val filteredSpeed = if (rawSpeed < MIN_SPEED_MS) 0f else rawSpeed
+
                 _samples.value = GpsSample(
                     tMono = SystemClock.elapsedRealtime(),
                     lat = loc.latitude,
                     lon = loc.longitude,
                     altitude = if (loc.hasAltitude()) loc.altitude else 0.0,
-                    speedMs = if (loc.hasSpeed()) loc.speed else 0f,
+                    speedMs = filteredSpeed,
                     bearing = if (loc.hasBearing()) loc.bearing else 0f,
-                    hAcc = if (loc.hasAccuracy()) loc.accuracy else 0f
+                    hAcc = accuracy
                 )
                 sampleCounter++
-                val acc = if (loc.hasAccuracy()) loc.accuracy else 999f
-                if (acc < 50f) _connectionState.update { it.copy(hasFix = true) }
+                _connectionState.update { it.copy(hasFix = hasFix) }
             }
         }
         locationCb = cb

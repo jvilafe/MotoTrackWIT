@@ -42,6 +42,11 @@ data class HudState(
 
     val sampleCount: Long = 0,
     val durationMs: Long = 0,
+    val maxRollLeft: Float = 0f,
+    val maxRollRight: Float = 0f,
+    val maxSpeedKmh: Float = 0f,
+    val maxAccelG: Float = 0f,
+    val maxBrakeG: Float = 0f,
     val recording: RecordingState = RecordingState.IDLE
 )
 
@@ -99,7 +104,10 @@ class RecordViewModel @Inject constructor(
             bearing = g.bearing,
             hAcc = g.hAcc,
 
-            roll = s.roll, pitch = s.pitch, yaw = s.yaw,
+            // Intercambiamos roll por yaw según la configuración física detectada
+            roll = s.yaw, 
+            pitch = s.pitch, 
+            yaw = s.roll,
             ax = s.ax, ay = s.ay, az = s.az,
             wx = s.wx, wy = s.wy, wz = s.wz,
             gMag = sqrt(s.ax*s.ax + s.ay*s.ay + s.az*s.az),
@@ -108,6 +116,11 @@ class RecordViewModel @Inject constructor(
 
             sampleCount = st.sampleCount,
             durationMs = st.durationMs,
+            maxRollLeft = st.maxRollLeft,
+            maxRollRight = st.maxRollRight,
+            maxSpeedKmh = st.maxSpeedKmh,
+            maxAccelG = st.maxAccelG,
+            maxBrakeG = st.maxBrakeG,
             recording = rec
         )
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(1000), HudState())

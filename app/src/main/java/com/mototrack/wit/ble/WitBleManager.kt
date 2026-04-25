@@ -126,6 +126,11 @@ class WitBleManager @Inject constructor(@ApplicationContext private val ctx: Con
         _connectionState.value = BleConnState(connected = false)
     }
 
+    /** Envía un comando arbitrario al sensor. Asegúrate de llamar a unlock si es necesario. */
+    fun sendCommand(bytes: ByteArray) {
+        writeCmd(bytes)
+    }
+
     private val gattCallback = object : BluetoothGattCallback() {
         override fun onConnectionStateChange(g: BluetoothGatt, status: Int, newState: Int) {
             if (newState == BluetoothProfile.STATE_CONNECTED) {

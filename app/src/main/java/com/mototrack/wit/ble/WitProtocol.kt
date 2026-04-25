@@ -153,6 +153,16 @@ object WitProtocol {
         byteArrayOf(0xFF.toByte(), 0xAA.toByte(), 0x27, 0x64, 0x00)
     fun cmdSave(): ByteArray = cmdWriteReg(0x00, 0x0000)
 
+    /** Cambia entre 6-ejes (solo acelerómetro/giroscopio) y 9-ejes (incluye magnetómetro).
+     * Para motos se recomienda 6-ejes (0x01) para evitar interferencias magnéticas. */
+    fun cmdSetAlgorithm(sixAxis: Boolean): ByteArray = cmdWriteReg(0x24, if (sixAxis) 0x01 else 0x00)
+
+    /** Calibración de acelerómetro (Z-axis). El sensor debe estar quieto y nivelado. */
+    fun cmdCalibrateAccel(): ByteArray = cmdWriteReg(0x01, 0x0001)
+
+    /** Calibración de magnetómetro. Inicia el proceso (girar el sensor en todos los ejes). */
+    fun cmdCalibrateMag(): ByteArray = cmdWriteReg(0x01, 0x0002)
+
     private fun cmdWriteReg(addr: Int, value: Int): ByteArray = byteArrayOf(
         0xFF.toByte(), 0xAA.toByte(),
         (addr and 0xFF).toByte(),

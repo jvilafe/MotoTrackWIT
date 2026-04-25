@@ -25,7 +25,7 @@ import androidx.compose.material.icons.filled.Map
 import androidx.compose.material.icons.filled.Memory
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
-import androidx.compose.material3.Divider
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -98,7 +98,7 @@ fun SensorsTabScreen(vm: SensorsViewModel = hiltViewModel()) {
                             }
                         )
 
-                        Divider()
+                        HorizontalDivider()
 
                         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                             Button(
@@ -116,7 +116,8 @@ fun SensorsTabScreen(vm: SensorsViewModel = hiltViewModel()) {
                             }
                         }
 
-                        if (discovered.isNotEmpty()) {
+                        // Solo mostramos dispositivos encontrados si no estamos ya conectados
+                        if (!bleConn.connected && discovered.isNotEmpty()) {
                             Spacer(Modifier.height(4.dp))
                             Text("Dispositivos encontrados", style = MaterialTheme.typography.labelLarge)
                             Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -127,43 +128,58 @@ fun SensorsTabScreen(vm: SensorsViewModel = hiltViewModel()) {
                                     )
                                 }
                             }
-                        } else if (!scanning && !bleConn.connected) {
+                        } else if (!scanning && !bleConn.connected && discovered.isEmpty()) {
                             Text(
                                 "Pulsa \"Buscar sensores\" para localizar el WitMotion.",
                                 style = MaterialTheme.typography.bodySmall
                             )
                         }
 
-                        Divider()
+                        HorizontalDivider()
 
-                        Text("Actividad en vivo", style = MaterialTheme.typography.labelLarge)
+                        Text("RealTime Data", style = MaterialTheme.typography.labelLarge)
 
                         Row(
                             modifier = Modifier.fillMaxWidth(),
                             horizontalArrangement = Arrangement.SpaceBetween
                         ) {
-                            Metric("Roll", "%+.1f°".format(telemetry.roll))
-                            Metric("Pitch", "%+.1f°".format(telemetry.pitch))
-                            Metric("Yaw", "%.1f°".format(telemetry.yaw))
+                            // Mapeo ajustado a la realidad física del usuario:
+                            // Inclinación lateral = s.yaw (Z)
+                            // Giro/Brújula = s.roll (X)
+                            Metric("Incl. Izq.", if (telemetry.roll < 0) "%.1f°".format(-telemetry.roll) else "0.0°")
+                            Metric("Incl. Der.", if (telemetry.roll > 0) "%.1f°".format(telemetry.roll) else "0.0°")
+                            Metric("Picado", "%+.1f°".format(telemetry.pitch))
                         }
 
                         Row(
                             modifier = Modifier.fillMaxWidth(),
                             horizontalArrangement = Arrangement.SpaceBetween
                         ) {
-                            Metric("Ax", "%+.2f g".format(telemetry.ax))
-                            Metric("Ay", "%+.2f g".format(telemetry.ay))
-                            Metric("Az", "%+.2f g".format(telemetry.az))
+                            Metric("Fuerzas |G|", "%.2f g".format(telemetry.gMag))
+                            Metric("Brújula", "%.1f°".format(if (telemetry.yaw < 0) telemetry.yaw + 360 else telemetry.yaw))
+                            Spacer(Modifier.weight(1f))
                         }
 
+                        HorizontalDivider()
+                        Text("Configuración", style = MaterialTheme.typography.labelLarge)
+                        
                         Row(
                             modifier = Modifier.fillMaxWidth(),
-                            horizontalArrangement = Arrangement.SpaceBetween
+                            horizontalArrangement = Arrangement.spacedBy(8.dp)
                         ) {
-                            Metric("|G|", "%.2f g".format(telemetry.gMag))
-                            Metric("Temp", "%.1f°C".format(telemetry.temp))
-                            Metric("Bat", telemetry.battery?.let { "$it%" } ?: "—")
+                            OutlinedButton(
+                                onClick = { vm.calibrateAccelerometer() },
+                                modifier = Modifier.fillMaxWidth(),
+                                enabled = bleConn.connected
+                            ) {
+                                Text("Calibrar Nivel", style = MaterialTheme.typography.labelSmall)
+                            }
                         }
+                        Text(
+                            "Pon el sensor plano sobre una superficie nivelada para Calibrar Nivel.",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.outline
+                        )
                     }
                 }
             }
@@ -198,7 +214,7 @@ fun SensorsTabScreen(vm: SensorsViewModel = hiltViewModel()) {
                             }
                         )
 
-                        Divider()
+                        HorizontalDivider()
 
                         Row(
                             modifier = Modifier.fillMaxWidth(),

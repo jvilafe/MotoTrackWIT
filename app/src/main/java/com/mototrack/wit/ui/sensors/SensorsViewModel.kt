@@ -64,10 +64,12 @@ class SensorsViewModel @Inject constructor(
 
     val telemetry: StateFlow<SensorTelemetry> = lastSample
         .combine(ble.connectionState) { s, _ ->
+            // Intercambiamos X y Z según las pruebas del usuario:
+            // En su configuración: Z (Yaw) es la inclinación lateral, X (Roll) es el rumbo/brújula.
             SensorTelemetry(
-                roll = s.roll,
+                roll = s.yaw,   // Usamos Yaw como inclinación lateral (Lean)
                 pitch = s.pitch,
-                yaw = s.yaw,
+                yaw = s.roll,   // Usamos Roll como rumbo (Giro)
                 ax = s.ax,
                 ay = s.ay,
                 az = s.az,
@@ -131,6 +133,22 @@ class SensorsViewModel @Inject constructor(
 
     fun disconnect() {
         ble.disconnect()
+    }
+
+    fun setSixAxisMode(enabled: Boolean) = viewModelScope.launch {
+        ble.sendCommand(WitProtocol.cmdUnlock())
+        delay(100)
+        ble.sendCommand(WitProtocol.cmdSetAlgorithm(enabled))
+        delay(100)
+        ble.sendCommand(WitProtocol.cmdSave())
+    }
+
+    fun calibrateAccelerometer() = viewModelScope.launch {
+        ble.sendCommand(WitProtocol.cmdUnlock())
+        delay(100)
+        ble.sendCommand(WitProtocol.cmdCalibrateAccel())
+        delay(100)
+        ble.sendCommand(WitProtocol.cmdSave())
     }
 
     override fun onCleared() {
