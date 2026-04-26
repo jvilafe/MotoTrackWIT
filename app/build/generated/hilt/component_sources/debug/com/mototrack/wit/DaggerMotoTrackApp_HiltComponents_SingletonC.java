@@ -409,27 +409,27 @@ public final class DaggerMotoTrackApp_HiltComponents_SingletonC {
 
     @IdentifierNameString
     private static final class LazyClassKeyProvider {
-      static String com_mototrack_wit_ui_sensors_SensorsViewModel = "com.mototrack.wit.ui.sensors.SensorsViewModel";
-
       static String com_mototrack_wit_ui_record_RecordViewModel = "com.mototrack.wit.ui.record.RecordViewModel";
-
-      static String com_mototrack_wit_ui_debug_DebugViewModel = "com.mototrack.wit.ui.debug.DebugViewModel";
 
       static String com_mototrack_wit_ui_detail_RouteDetailViewModel = "com.mototrack.wit.ui.detail.RouteDetailViewModel";
 
-      static String com_mototrack_wit_ui_routes_RoutesViewModel = "com.mototrack.wit.ui.routes.RoutesViewModel";
+      static String com_mototrack_wit_ui_sensors_SensorsViewModel = "com.mototrack.wit.ui.sensors.SensorsViewModel";
 
-      @KeepFieldType
-      SensorsViewModel com_mototrack_wit_ui_sensors_SensorsViewModel2;
+      static String com_mototrack_wit_ui_debug_DebugViewModel = "com.mototrack.wit.ui.debug.DebugViewModel";
+
+      static String com_mototrack_wit_ui_routes_RoutesViewModel = "com.mototrack.wit.ui.routes.RoutesViewModel";
 
       @KeepFieldType
       RecordViewModel com_mototrack_wit_ui_record_RecordViewModel2;
 
       @KeepFieldType
-      DebugViewModel com_mototrack_wit_ui_debug_DebugViewModel2;
+      RouteDetailViewModel com_mototrack_wit_ui_detail_RouteDetailViewModel2;
 
       @KeepFieldType
-      RouteDetailViewModel com_mototrack_wit_ui_detail_RouteDetailViewModel2;
+      SensorsViewModel com_mototrack_wit_ui_sensors_SensorsViewModel2;
+
+      @KeepFieldType
+      DebugViewModel com_mototrack_wit_ui_debug_DebugViewModel2;
 
       @KeepFieldType
       RoutesViewModel com_mototrack_wit_ui_routes_RoutesViewModel2;
@@ -485,30 +485,30 @@ public final class DaggerMotoTrackApp_HiltComponents_SingletonC {
 
     @IdentifierNameString
     private static final class LazyClassKeyProvider {
-      static String com_mototrack_wit_ui_record_RecordViewModel = "com.mototrack.wit.ui.record.RecordViewModel";
-
-      static String com_mototrack_wit_ui_detail_RouteDetailViewModel = "com.mototrack.wit.ui.detail.RouteDetailViewModel";
-
-      static String com_mototrack_wit_ui_sensors_SensorsViewModel = "com.mototrack.wit.ui.sensors.SensorsViewModel";
+      static String com_mototrack_wit_ui_routes_RoutesViewModel = "com.mototrack.wit.ui.routes.RoutesViewModel";
 
       static String com_mototrack_wit_ui_debug_DebugViewModel = "com.mototrack.wit.ui.debug.DebugViewModel";
 
-      static String com_mototrack_wit_ui_routes_RoutesViewModel = "com.mototrack.wit.ui.routes.RoutesViewModel";
+      static String com_mototrack_wit_ui_record_RecordViewModel = "com.mototrack.wit.ui.record.RecordViewModel";
+
+      static String com_mototrack_wit_ui_sensors_SensorsViewModel = "com.mototrack.wit.ui.sensors.SensorsViewModel";
+
+      static String com_mototrack_wit_ui_detail_RouteDetailViewModel = "com.mototrack.wit.ui.detail.RouteDetailViewModel";
 
       @KeepFieldType
-      RecordViewModel com_mototrack_wit_ui_record_RecordViewModel2;
-
-      @KeepFieldType
-      RouteDetailViewModel com_mototrack_wit_ui_detail_RouteDetailViewModel2;
-
-      @KeepFieldType
-      SensorsViewModel com_mototrack_wit_ui_sensors_SensorsViewModel2;
+      RoutesViewModel com_mototrack_wit_ui_routes_RoutesViewModel2;
 
       @KeepFieldType
       DebugViewModel com_mototrack_wit_ui_debug_DebugViewModel2;
 
       @KeepFieldType
-      RoutesViewModel com_mototrack_wit_ui_routes_RoutesViewModel2;
+      RecordViewModel com_mototrack_wit_ui_record_RecordViewModel2;
+
+      @KeepFieldType
+      SensorsViewModel com_mototrack_wit_ui_sensors_SensorsViewModel2;
+
+      @KeepFieldType
+      RouteDetailViewModel com_mototrack_wit_ui_detail_RouteDetailViewModel2;
     }
 
     private static final class SwitchingProvider<T> implements Provider<T> {
