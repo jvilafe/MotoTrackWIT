@@ -14,5 +14,5 @@ dependencyResolutionManagement {
         maven { url = uri("https://maven.maplibre.org") }
     }
 }
-rootProject.name = "MotoTrackWIT"
+rootProject.name = "MotoTracker"
 include(":app")

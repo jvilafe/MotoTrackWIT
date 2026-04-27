@@ -1,9 +1,13 @@
 R_DEF: Internal format may change without notice
 local
+color ducati_black
+color ducati_red
+color white
+drawable ic_launcher_foreground
 drawable ic_stat_record
 mipmap ic_launcher
 mipmap ic_launcher_round
 raw osm_style
 string app_name
-style Theme.MotoTrackWIT
+style Theme.MotoTracker
 xml backup_rules

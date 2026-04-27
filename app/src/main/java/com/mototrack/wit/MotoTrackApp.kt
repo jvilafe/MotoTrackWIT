@@ -7,7 +7,7 @@ import android.os.Build
 import dagger.hilt.android.HiltAndroidApp
 
 /**
- * Clase Application de MotoTrack WIT.
+ * Clase Application de MotoTracker.
  *
  * Cambios respecto a la versión anterior:
  *  - Eliminada la integración con `androidx.hilt:hilt-work` (HiltWorkerFactory

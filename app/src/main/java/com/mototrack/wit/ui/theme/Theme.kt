@@ -19,6 +19,6 @@ private val Light = lightColorScheme(
 )
 
 @Composable
-fun MotoTrackTheme(content: @Composable () -> Unit) {
+fun MotoTrackerTheme(content: @Composable () -> Unit) {
     MaterialTheme(colorScheme = if (isSystemInDarkTheme()) Dark else Light, content = content)
 }

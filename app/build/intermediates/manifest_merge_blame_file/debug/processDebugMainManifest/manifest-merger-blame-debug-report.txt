@@ -9,82 +9,82 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:5:5-67
-11-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:5:22-64
+11-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:5:5-67
+11-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:6:5-79
-12-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:6:22-76
+12-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:6:5-79
+12-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:6:22-76
 13
 14    <!-- BLE Android 12++ -->
 15    <uses-permission
-15-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:9:5-10:78
+15-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:9:5-10:78
 16        android:name="android.permission.BLUETOOTH_SCAN"
-16-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:9:22-70
+16-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:9:22-70
 17        android:usesPermissionFlags="neverForLocation" />
-17-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:10:9-55
+17-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:10:9-55
 18    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
-18-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:11:5-96
-18-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:11:22-73
+18-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:11:5-96
+18-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:11:22-73
 19    <!-- Compatibilidad < 12 -->
 20    <uses-permission
-20-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:13:5-95
+20-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:13:5-95
 21        android:name="android.permission.BLUETOOTH"
-21-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:13:22-65
+21-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:13:22-65
 22        android:maxSdkVersion="30" />
-22-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:13:66-92
+22-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:13:66-92
 23    <uses-permission
-23-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:14:5-101
+23-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:14:5-101
 24        android:name="android.permission.BLUETOOTH_ADMIN"
-24-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:14:22-71
+24-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:14:22-71
 25        android:maxSdkVersion="30" />
-25-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:14:72-98
+25-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:14:72-98
 26
 27    <!-- GPS -->
 28    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-28-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:17:5-79
-28-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:17:22-76
+28-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:17:5-79
+28-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:17:22-76
 29    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-29-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:18:5-81
-29-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:18:22-78
+29-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:18:5-81
+29-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:18:22-78
 30    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-30-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:19:5-85
-30-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:19:22-82
+30-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:19:5-85
+30-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:19:22-82
 31    <uses-permission
-31-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:20:5-107
+31-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:20:5-107
 32        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-32-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:20:22-78
+32-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:20:22-78
 33        android:maxSdkVersion="28" />
-33-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:20:79-105
+33-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:20:79-105
 34
 35    <!-- Foreground service -->
 36    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-36-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:23:5-77
-36-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:23:22-74
+36-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:23:5-77
+36-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:23:22-74
 37    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
-37-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:24:5-86
-37-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:24:22-83
+37-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:24:5-86
+37-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:24:22-83
 38    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE" />
-38-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:25:5-94
-38-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:25:22-91
+38-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:25:5-94
+38-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:25:22-91
 39    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-39-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:26:5-77
-39-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:26:22-74
+39-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:26:5-77
+39-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:26:22-74
 40    <uses-permission android:name="android.permission.WAKE_LOCK" />
-40-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:27:5-68
-40-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:27:22-65
+40-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:27:5-68
+40-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:27:22-65
 41
 42    <uses-feature
-42-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:29:5-90
+42-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:29:5-90
 43        android:name="android.hardware.bluetooth_le"
-43-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:29:19-63
+43-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:29:19-63
 44        android:required="true" />
-44-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:29:64-87
+44-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:29:64-87
 45    <uses-feature
-45-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:30:5-90
+45-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:30:5-90
 46        android:name="android.hardware.location.gps"
-46-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:30:19-63
+46-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:30:19-63
 47        android:required="true" />
-47-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:30:64-87
+47-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:30:64-87
 48
 49    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 49-->[androidx.work:work-runtime:2.9.0] C:\Users\jvila\.gradle\caches\transforms-4\e163954312c692485621b3f1414afc45\transformed\work-runtime-2.9.0\AndroidManifest.xml:25:5-81
@@ -119,56 +119,56 @@
 64-->[androidx.core:core:1.13.1] C:\Users\jvila\.gradle\caches\transforms-4\c77645eb941b61d3349cfcdddf935911\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
 65
 66    <application
-66-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:32:5-57:19
+66-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:32:5-57:19
 67        android:name="com.mototrack.wit.MotoTrackApp"
-67-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:33:9-37
+67-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:33:9-37
 68        android:allowBackup="false"
-68-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:34:9-36
+68-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:34:9-36
 69        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 69-->[androidx.core:core:1.13.1] C:\Users\jvila\.gradle\caches\transforms-4\c77645eb941b61d3349cfcdddf935911\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 70        android:debuggable="true"
 71        android:extractNativeLibs="false"
 72        android:icon="@mipmap/ic_launcher"
-72-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:35:9-43
+72-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:35:9-43
 73        android:label="@string/app_name"
-73-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:36:9-41
+73-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:36:9-41
 74        android:roundIcon="@mipmap/ic_launcher_round"
-74-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:37:9-54
+74-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:37:9-54
 75        android:supportsRtl="true"
-75-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:38:9-35
+75-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:38:9-35
 76        android:testOnly="true"
-77        android:theme="@style/Theme.MotoTrackWIT" >
-77-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:39:9-50
+77        android:theme="@style/Theme.MotoTracker" >
+77-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:39:9-49
 78        <activity
-78-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:42:9-51:20
+78-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:42:9-51:20
 79            android:name="com.mototrack.wit.MainActivity"
-79-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:43:13-41
+79-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:43:13-41
 80            android:exported="true"
-80-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:44:13-36
+80-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:44:13-36
 81            android:launchMode="singleTask"
-81-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:45:13-44
-82            android:theme="@style/Theme.MotoTrackWIT" >
-82-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:46:13-54
+81-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:45:13-44
+82            android:theme="@style/Theme.MotoTracker" >
+82-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:46:13-53
 83            <intent-filter>
-83-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:47:13-50:29
+83-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:47:13-50:29
 84                <action android:name="android.intent.action.MAIN" />
-84-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:48:17-69
-84-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:48:25-66
+84-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:48:17-69
+84-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:48:25-66
 85
 86                <category android:name="android.intent.category.LAUNCHER" />
-86-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:49:17-77
-86-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:49:27-74
+86-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:49:17-77
+86-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:49:27-74
 87            </intent-filter>
 88        </activity>
 89
 90        <service
-90-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:53:9-56:72
+90-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:53:9-56:72
 91            android:name="com.mototrack.wit.service.RecordingForegroundService"
-91-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:54:13-63
+91-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:54:13-63
 92            android:exported="false"
-92-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:55:13-37
+92-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:55:13-37
 93            android:foregroundServiceType="location|connectedDevice" />
-93-->Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:56:13-69
+93-->Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:56:13-69
 94
 95        <activity
 95-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\jvila\.gradle\caches\transforms-4\8acd437e785057599329d139f988e796\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173

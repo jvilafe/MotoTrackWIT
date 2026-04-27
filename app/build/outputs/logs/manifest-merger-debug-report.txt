@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:2:1-58:12
-INJECTED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:2:1-58:12
-INJECTED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:2:1-58:12
-INJECTED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:2:1-58:12
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:2:1-58:12
 MERGED from [com.google.android.gms:play-services-location:21.3.0] C:\Users\jvila\.gradle\caches\transforms-4\69d4fbfb9fe59482c9218e85ae437671\transformed\play-services-location-21.3.0\AndroidManifest.xml:2:1-8:12
 MERGED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\jvila\.gradle\caches\transforms-4\8acd437e785057599329d139f988e796\transformed\play-services-base-18.5.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-tasks:18.2.0] C:\Users\jvila\.gradle\caches\transforms-4\360a85aabec4b2613d94daa0c1c13ac9\transformed\play-services-tasks-18.2.0\AndroidManifest.xml:2:1-5:12
@@ -78,116 +78,116 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\jvila\.gradle\cach
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\jvila\.gradle\caches\transforms-4\b8e9662051771887beef8f171d8c63b8\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.dagger:dagger-lint-aar:2.51.1] C:\Users\jvila\.gradle\caches\transforms-4\21049c480ee41993b7f3b40a49c376a9\transformed\dagger-lint-aar-2.51.1\AndroidManifest.xml:16:1-19:12
 	package
-		INJECTED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml
+		INJECTED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml
+		INJECTED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml
+		INJECTED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:5:5-67
 MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:14:5-67
 MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:14:5-67
 	android:name
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:6:5-79
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:6:5-79
 MERGED from [androidx.work:work-runtime:2.9.0] C:\Users\jvila\.gradle\caches\transforms-4\e163954312c692485621b3f1414afc45\transformed\work-runtime-2.9.0\AndroidManifest.xml:24:5-79
 MERGED from [androidx.work:work-runtime:2.9.0] C:\Users\jvila\.gradle\caches\transforms-4\e163954312c692485621b3f1414afc45\transformed\work-runtime-2.9.0\AndroidManifest.xml:24:5-79
 MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:15:5-79
 MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:15:5-79
 	android:name
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:6:22-76
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:6:22-76
 uses-permission#android.permission.BLUETOOTH_SCAN
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:9:5-10:78
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:9:5-10:78
 	android:usesPermissionFlags
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:10:9-55
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:10:9-55
 	tools:targetApi
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:10:56-75
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:10:56-75
 	android:name
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:9:22-70
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:9:22-70
 uses-permission#android.permission.BLUETOOTH_CONNECT
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:11:5-96
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:11:5-96
 	tools:targetApi
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:11:74-93
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:11:74-93
 	android:name
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:11:22-73
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:11:22-73
 uses-permission#android.permission.BLUETOOTH
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:13:5-95
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:13:5-95
 	android:maxSdkVersion
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:13:66-92
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:13:66-92
 	android:name
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:13:22-65
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:13:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:14:5-101
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:14:5-101
 	android:maxSdkVersion
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:14:72-98
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:14:72-98
 	android:name
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:14:22-71
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:14:22-71
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:17:5-79
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:17:5-79
 MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:18:5-79
 MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:18:5-79
 	android:name
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:17:22-76
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:17:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:18:5-81
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:18:5-81
 MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:17:5-81
 MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\jvila\.gradle\caches\transforms-4\f57a67a8244d1c76074351c210653596\transformed\android-sdk-11.5.2\AndroidManifest.xml:17:5-81
 	android:name
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:18:22-78
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:18:22-78
 uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:19:5-85
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:19:5-85
 	android:name
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:19:22-82
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:19:22-82
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:20:5-107
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:20:5-107
 	android:maxSdkVersion
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:20:79-105
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:20:79-105
 	android:name
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:20:22-78
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:20:22-78
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:23:5-77
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:23:5-77
 MERGED from [androidx.work:work-runtime:2.9.0] C:\Users\jvila\.gradle\caches\transforms-4\e163954312c692485621b3f1414afc45\transformed\work-runtime-2.9.0\AndroidManifest.xml:26:5-77
 MERGED from [androidx.work:work-runtime:2.9.0] C:\Users\jvila\.gradle\caches\transforms-4\e163954312c692485621b3f1414afc45\transformed\work-runtime-2.9.0\AndroidManifest.xml:26:5-77
 	android:name
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:23:22-74
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:23:22-74
 uses-permission#android.permission.FOREGROUND_SERVICE_LOCATION
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:24:5-86
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:24:5-86
 	android:name
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:24:22-83
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:24:22-83
 uses-permission#android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:25:5-94
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:25:5-94
 	android:name
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:25:22-91
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:25:22-91
 uses-permission#android.permission.POST_NOTIFICATIONS
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:26:5-77
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:26:5-77
 	android:name
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:26:22-74
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:26:22-74
 uses-permission#android.permission.WAKE_LOCK
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:27:5-68
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:27:5-68
 MERGED from [androidx.work:work-runtime:2.9.0] C:\Users\jvila\.gradle\caches\transforms-4\e163954312c692485621b3f1414afc45\transformed\work-runtime-2.9.0\AndroidManifest.xml:23:5-68
 MERGED from [androidx.work:work-runtime:2.9.0] C:\Users\jvila\.gradle\caches\transforms-4\e163954312c692485621b3f1414afc45\transformed\work-runtime-2.9.0\AndroidManifest.xml:23:5-68
 	android:name
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:27:22-65
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:27:22-65
 uses-feature#android.hardware.bluetooth_le
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:29:5-90
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:29:5-90
 	android:required
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:29:64-87
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:29:64-87
 	android:name
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:29:19-63
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:29:19-63
 uses-feature#android.hardware.location.gps
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:30:5-90
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:30:5-90
 	android:required
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:30:64-87
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:30:64-87
 	android:name
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:30:19-63
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:30:19-63
 application
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:32:5-57:19
-INJECTED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:32:5-57:19
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:32:5-57:19
+INJECTED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:32:5-57:19
 MERGED from [com.google.android.gms:play-services-location:21.3.0] C:\Users\jvila\.gradle\caches\transforms-4\69d4fbfb9fe59482c9218e85ae437671\transformed\play-services-location-21.3.0\AndroidManifest.xml:6:5-20
 MERGED from [com.google.android.gms:play-services-location:21.3.0] C:\Users\jvila\.gradle\caches\transforms-4\69d4fbfb9fe59482c9218e85ae437671\transformed\play-services-location-21.3.0\AndroidManifest.xml:6:5-20
 MERGED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\jvila\.gradle\caches\transforms-4\8acd437e785057599329d139f988e796\transformed\play-services-base-18.5.0\AndroidManifest.xml:4:5-6:19
@@ -215,57 +215,57 @@ MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\jvila\.g
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\jvila\.gradle\caches\transforms-4\720291cc36262b733f055d4c68f0c2f6\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\jvila\.gradle\caches\transforms-4\720291cc36262b733f055d4c68f0c2f6\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 	android:extractNativeLibs
-		INJECTED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml
+		INJECTED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] C:\Users\jvila\.gradle\caches\transforms-4\c77645eb941b61d3349cfcdddf935911\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:38:9-35
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:38:9-35
 	android:label
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:36:9-41
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:36:9-41
 	android:roundIcon
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:37:9-54
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:37:9-54
 	tools:targetApi
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:40:9-29
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:40:9-29
 	android:icon
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:35:9-43
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:35:9-43
 	android:allowBackup
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:34:9-36
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:34:9-36
 	android:theme
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:39:9-50
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:39:9-49
 	android:name
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:33:9-37
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:33:9-37
 activity#com.mototrack.wit.MainActivity
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:42:9-51:20
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:42:9-51:20
 	android:launchMode
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:45:13-44
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:45:13-44
 	android:exported
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:44:13-36
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:44:13-36
 	android:theme
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:46:13-54
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:46:13-53
 	android:name
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:43:13-41
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:43:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:47:13-50:29
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:47:13-50:29
 action#android.intent.action.MAIN
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:48:17-69
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:48:17-69
 	android:name
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:48:25-66
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:48:25-66
 category#android.intent.category.LAUNCHER
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:49:17-77
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:49:17-77
 	android:name
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:49:27-74
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:49:27-74
 service#com.mototrack.wit.service.RecordingForegroundService
-ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:53:9-56:72
+ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:53:9-56:72
 	android:exported
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:55:13-37
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:55:13-37
 	android:foregroundServiceType
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:56:13-69
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:56:13-69
 	android:name
-		ADDED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml:54:13-63
+		ADDED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml:54:13-63
 uses-sdk
-INJECTED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml
-INJECTED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml
+INJECTED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml
+INJECTED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml
 MERGED from [com.google.android.gms:play-services-location:21.3.0] C:\Users\jvila\.gradle\caches\transforms-4\69d4fbfb9fe59482c9218e85ae437671\transformed\play-services-location-21.3.0\AndroidManifest.xml:4:5-44
 MERGED from [com.google.android.gms:play-services-location:21.3.0] C:\Users\jvila\.gradle\caches\transforms-4\69d4fbfb9fe59482c9218e85ae437671\transformed\play-services-location-21.3.0\AndroidManifest.xml:4:5-44
 MERGED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\jvila\.gradle\caches\transforms-4\8acd437e785057599329d139f988e796\transformed\play-services-base-18.5.0\AndroidManifest.xml:3:5-44
@@ -413,9 +413,9 @@ MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\jvila\.gradle\caches\trans
 MERGED from [com.google.dagger:dagger-lint-aar:2.51.1] C:\Users\jvila\.gradle\caches\transforms-4\21049c480ee41993b7f3b40a49c376a9\transformed\dagger-lint-aar-2.51.1\AndroidManifest.xml:18:3-42
 MERGED from [com.google.dagger:dagger-lint-aar:2.51.1] C:\Users\jvila\.gradle\caches\transforms-4\21049c480ee41993b7f3b40a49c376a9\transformed\dagger-lint-aar-2.51.1\AndroidManifest.xml:18:3-42
 	android:targetSdkVersion
-		INJECTED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml
+		INJECTED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from Z:\GITHub\MotoTrackWIT\app\src\main\AndroidManifest.xml
+		INJECTED from Z:\AndroidStudio\MotoTrackWIT_v2\app\src\main\AndroidManifest.xml
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\jvila\.gradle\caches\transforms-4\8acd437e785057599329d139f988e796\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
 	android:exported

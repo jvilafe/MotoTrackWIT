@@ -1,11 +1,11 @@
-# MotoTrack WIT — Android nativo
+# MotoTracker — Android nativo
 
 App Android nativa (Kotlin + Jetpack Compose) para registrar rutas en moto fusionando:
 - Sensor BLE **WitMotion WT901BLECL5.0** (50 Hz: aceleración, giroscopio, ángulos roll/pitch/yaw).
 - GPS interno (10 Hz vía FusedLocationProviderClient).
 - Salida combinada a **25 Hz** persistida en Room.
 - Visualización en mapa **MapLibre Native + OpenStreetMap** (gratis, sin API key, sin tarjeta).
-- Sincronización opcional a **Google Drive** (carpeta `MotoTrackWIT/`).
+- Sincronización opcional a **Google Drive** (carpeta `MotoTracker/`).
 
 > Probado contra: Xiaomi Poco X5 (22111317PG), Android 14.
 
@@ -36,7 +36,7 @@ app/src/main/res/raw/osm_style.json   # Estilo MapLibre con tiles OSM
 
 ## Pasos para abrirlo en Android Studio
 
-1. Abre **Android Studio** → *Open* → selecciona la carpeta `MotoTrackWIT/`.
+1. Abre **Android Studio** → *Open* → selecciona la carpeta `MotoTracker/`.
 2. Copia `local.properties.example` a `local.properties` y rellena solo `sdk.dir`.
    **No hace falta ningún token de mapas.**
 3. (Solo si vas a usar Drive) Sigue `docs/google-drive-setup.md`, descarga `google-services.json` y colócalo en `app/`. Después descomenta `id("com.google.gms.google-services")` en `app/build.gradle.kts`.
@@ -45,7 +45,7 @@ app/src/main/res/raw/osm_style.json   # Estilo MapLibre con tiles OSM
    - Ubicación → "Permitir todo el tiempo".
    - Bluetooth cercano.
    - Notificaciones.
-6. **MIUI/HyperOS — IMPORTANTE**: ve a Ajustes → Apps → MotoTrack WIT → Ahorro de batería → **Sin restricciones**, y activa "Inicio automático". Sin esto, el servicio en background se mata.
+6. **MIUI/HyperOS — IMPORTANTE**: ve a Ajustes → Apps → MotoTracker → Ahorro de batería → **Sin restricciones**, y activa "Inicio automático". Sin esto, el servicio en background se mata.
 
 ## Mapas
 

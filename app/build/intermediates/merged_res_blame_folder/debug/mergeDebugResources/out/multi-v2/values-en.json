@@ -4,13 +4,35 @@
             "outputFile": "com.mototrack.wit.app-mergeDebugResources-61:/values-en/values-en.xml",
             "map": [
                 {
-                    "source": "Z:\\GITHub\\MotoTrackWIT\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "source": "Z:\\AndroidStudio\\MotoTrackWIT_v2\\app\\src\\main\\res\\values-en\\strings.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
-                        "startOffsets": "16",
+                        "startOffsets": "17",
+                        "endColumns": "48",
+                        "endOffsets": "61"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\jvila\\.gradle\\daemon\\8.7\\com.mototrack.wit.app-mergeDebugResources-61:\\values-en\\values-en.xml",
+            "map": [
+                {
+                    "source": "Z:\\AndroidStudio\\MotoTrackWIT_v2\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "17",
                         "endColumns": "50",
-                        "endOffsets": "62"
+                        "endOffsets": "63"
                     },
                     "to": {
                         "startLines": "2",

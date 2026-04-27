@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MotoTrack WIT</string>
-    <style name="Theme.MotoTrackWIT" parent="android:Theme.Material.Light.NoActionBar"/>
+    <color name="ducati_black">#1A1A1A</color>
+    <color name="ducati_red">#CE1126</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">MotoTracker</string>
+    <style name="Theme.MotoTracker" parent="android:Theme.Material.Light.NoActionBar"/>
 </resources>
