@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Aggressive Shield / Fairing shape -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M54,25 L85,45 L75,85 L54,75 L33,85 L23,45 Z" />
+    <!-- Inner detail (V-shape) -->
+    <path
+        android:fillColor="@color/ducati_black"
+        android:pathData="M54,35 L70,45 L54,65 L38,45 Z" />
+    <!-- Speed line / Slash -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M15,15 L40,15 L35,22 L10,22 Z" />
+</vector>
