@@ -25,6 +25,8 @@ import hilt_aggregated_deps._com_mototrack_wit_ui_debug_DebugViewModel_HiltModul
 import hilt_aggregated_deps._com_mototrack_wit_ui_debug_DebugViewModel_HiltModules_KeyModule;
 import hilt_aggregated_deps._com_mototrack_wit_ui_detail_RouteDetailViewModel_HiltModules_BindsModule;
 import hilt_aggregated_deps._com_mototrack_wit_ui_detail_RouteDetailViewModel_HiltModules_KeyModule;
+import hilt_aggregated_deps._com_mototrack_wit_ui_map_MapViewModel_HiltModules_BindsModule;
+import hilt_aggregated_deps._com_mototrack_wit_ui_map_MapViewModel_HiltModules_KeyModule;
 import hilt_aggregated_deps._com_mototrack_wit_ui_record_RecordViewModel_HiltModules_BindsModule;
 import hilt_aggregated_deps._com_mototrack_wit_ui_record_RecordViewModel_HiltModules_KeyModule;
 import hilt_aggregated_deps._com_mototrack_wit_ui_routes_RoutesViewModel_HiltModules_BindsModule;
@@ -79,6 +81,8 @@ import hilt_aggregated_deps._dagger_hilt_android_internal_modules_HiltWrapper_Ac
         _com_mototrack_wit_ui_debug_DebugViewModel_HiltModules_KeyModule.class,
         _com_mototrack_wit_ui_detail_RouteDetailViewModel_HiltModules_BindsModule.class,
         _com_mototrack_wit_ui_detail_RouteDetailViewModel_HiltModules_KeyModule.class,
+        _com_mototrack_wit_ui_map_MapViewModel_HiltModules_BindsModule.class,
+        _com_mototrack_wit_ui_map_MapViewModel_HiltModules_KeyModule.class,
         _com_mototrack_wit_ui_record_RecordViewModel_HiltModules_BindsModule.class,
         _com_mototrack_wit_ui_record_RecordViewModel_HiltModules_KeyModule.class,
         _com_mototrack_wit_ui_routes_RoutesViewModel_HiltModules_BindsModule.class,

@@ -4,6 +4,7 @@ import com.mototrack.wit.di.AppModule;
 import com.mototrack.wit.service.RecordingForegroundService_GeneratedInjector;
 import com.mototrack.wit.ui.debug.DebugViewModel_HiltModules;
 import com.mototrack.wit.ui.detail.RouteDetailViewModel_HiltModules;
+import com.mototrack.wit.ui.map.MapViewModel_HiltModules;
 import com.mototrack.wit.ui.record.RecordViewModel_HiltModules;
 import com.mototrack.wit.ui.routes.RoutesViewModel_HiltModules;
 import com.mototrack.wit.ui.sensors.SensorsViewModel_HiltModules;
@@ -162,6 +163,7 @@ public final class MotoTrackApp_HiltComponents {
           DebugViewModel_HiltModules.KeyModule.class,
           HiltWrapper_ActivityRetainedComponentManager_LifecycleModule.class,
           HiltWrapper_SavedStateHandleModule.class,
+          MapViewModel_HiltModules.KeyModule.class,
           ActivityCBuilderModule.class,
           ViewModelCBuilderModule.class,
           RecordViewModel_HiltModules.KeyModule.class,
@@ -205,6 +207,7 @@ public final class MotoTrackApp_HiltComponents {
       modules = {
           DebugViewModel_HiltModules.BindsModule.class,
           HiltWrapper_HiltViewModelFactory_ViewModelModule.class,
+          MapViewModel_HiltModules.BindsModule.class,
           RecordViewModel_HiltModules.BindsModule.class,
           RouteDetailViewModel_HiltModules.BindsModule.class,
           RoutesViewModel_HiltModules.BindsModule.class,

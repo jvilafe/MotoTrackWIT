@@ -30,7 +30,6 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.mototrack.wit.recording.RecordingState
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun RecordScreen(vm: RecordViewModel = hiltViewModel()) {
     val hud by vm.hud.collectAsState()
@@ -38,23 +37,9 @@ fun RecordScreen(vm: RecordViewModel = hiltViewModel()) {
 
     LaunchedEffect(Unit) { vm.startGps() }
 
-    Scaffold(
-        topBar = {
-            TopAppBar(
-                title = { Text("Ruta en Curso") },
-                actions = {
-                    // Indicadores rápidos de estado en la topbar
-                    StatusIcon(connected = hud.bleConnected, iconOn = Icons.Default.Bluetooth, iconOff = Icons.Default.BluetoothDisabled)
-                    Spacer(Modifier.width(8.dp))
-                    StatusIcon(connected = hud.gpsFix, iconOn = Icons.Default.GpsFixed, iconOff = Icons.Default.GpsOff)
-                    Spacer(Modifier.width(12.dp))
-                }
-            )
-        }
-    ) { pad ->
+    Box(modifier = Modifier.fillMaxSize()) {
         Column(
             modifier = Modifier
-                .padding(pad)
                 .padding(16.dp)
                 .fillMaxSize()
                 .verticalScroll(rememberScrollState()),

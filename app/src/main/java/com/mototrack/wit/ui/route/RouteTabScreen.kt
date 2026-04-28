@@ -31,10 +31,9 @@ fun RouteTabScreen(
 
     LaunchedEffect(Unit) { vm.startGps() }
 
-    Scaffold(topBar = { TopAppBar(title = { Text("Ruta") }) }) { pad ->
+    Box(modifier = Modifier.fillMaxSize()) {
         Column(
             modifier = Modifier
-                .padding(pad)
                 .padding(12.dp)
                 .verticalScroll(rememberScrollState()),
             verticalArrangement = Arrangement.spacedBy(12.dp),

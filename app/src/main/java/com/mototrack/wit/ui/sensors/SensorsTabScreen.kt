@@ -57,14 +57,9 @@ fun SensorsTabScreen(vm: SensorsViewModel = hiltViewModel()) {
     val gpsSample by vm.gpsSample.collectAsState()
     val telemetry by vm.telemetry.collectAsState()
 
-    Scaffold(
-        topBar = {
-            TopAppBar(title = { Text("Sensores") })
-        }
-    ) { padding ->
+    Box(modifier = Modifier.fillMaxSize()) {
         LazyColumn(
             modifier = Modifier
-                .padding(padding)
                 .padding(12.dp)
                 .fillMaxSize(),
             verticalArrangement = Arrangement.spacedBy(12.dp)
@@ -333,26 +328,4 @@ private fun Metric(label: String, value: String) {
     }
 }
 
-@Composable
-fun MapPlaceholderScreen() {
-    Scaffold(
-        topBar = {
-            TopAppBar(title = { Text("Mapa") })
-        }
-    ) { padding ->
-        Box(
-            modifier = Modifier
-                .padding(padding)
-                .fillMaxSize(),
-            contentAlignment = Alignment.Center
-        ) {
-            Row(
-                verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.spacedBy(8.dp)
-            ) {
-                Icon(Icons.Default.Map, contentDescription = null)
-                Text("Pantalla de mapa pendiente de la siguiente tanda")
-            }
-        }
-    }
-}
+
